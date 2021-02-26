@@ -6,15 +6,6 @@ import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import json from '@rollup/plugin-json';
 
-export default {
-  input: 'src/index.js',
-  output: {
-    dir: 'output',
-    format: 'cjs'
-  },
-  plugins: [json()]
-};
-
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
@@ -78,7 +69,9 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+
+		json()
 	],
 	watch: {
 		clearScreen: false

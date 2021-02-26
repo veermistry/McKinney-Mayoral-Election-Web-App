@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -191,6 +191,12 @@ var app = (function () {
             block.o(local);
         }
     }
+
+    const globals = (typeof window !== 'undefined'
+        ? window
+        : typeof globalThis !== 'undefined'
+            ? globalThis
+            : global);
     function create_component(block) {
         block && block.c();
     }
@@ -386,6 +392,165 @@ var app = (function () {
         $inject_state() { }
     }
 
+    var locations = [
+    	{
+    		ID: 1,
+    		Type: "Both",
+    		Name: "Anna ISD Administration Building",
+    		Room: "Board Conference Room",
+    		"Street Address": "201 E 7th Street",
+    		City: "Anna",
+    		State: "TX",
+    		Zip: "75049",
+    		Longitude: "33.346207",
+    		Latitude: "-96.547211"
+    	},
+    	{
+    		ID: 2,
+    		Type: "Election Day",
+    		Name: "Blue Ridge ISD Administration",
+    		Room: "Board Room",
+    		"Street Address": "318 West School Street",
+    		City: "Blue Ridge",
+    		State: "TX",
+    		Zip: "75424",
+    		Longitude: "33.30546",
+    		Latitude: "-96.40425"
+    	},
+    	{
+    		ID: 3,
+    		Type: "Both",
+    		Name: "Celina ISD Administration Building",
+    		Room: "Gym",
+    		"Street Address": "205 S Colorado Street",
+    		City: "Celina",
+    		State: "TX",
+    		Zip: "75009",
+    		Longitude: "33.32303",
+    		Latitude: "-96.78852"
+    	},
+    	{
+    		ID: 4,
+    		Type: "Both",
+    		Name: "Collin County Elections Office",
+    		Room: "Voting Room",
+    		"Street Address": "2010 Redbud Boulevard, Suite 102",
+    		City: "McKinney",
+    		State: "TX",
+    		Zip: "75069",
+    		Longitude: "33.21976",
+    		Latitude: "-96.62817"
+    	},
+    	{
+    		ID: 5,
+    		Type: "Both",
+    		Name: "Farmersville City Hall",
+    		Room: "Council Chambers",
+    		"Street Address": "205 S Main Street",
+    		City: "Farmersville",
+    		State: "TX",
+    		Zip: "75442",
+    		Longitude: "33.16128",
+    		Latitude: "-96.35975"
+    	},
+    	{
+    		ID: 6,
+    		Type: "Both",
+    		Name: "First Melissa",
+    		Room: "Building B Foyer",
+    		"Street Address": "2101 E Melissa Road",
+    		City: "Melissa",
+    		State: "TX",
+    		Zip: "75454",
+    		Longitude: "33.28182",
+    		Latitude: "-96.5667"
+    	},
+    	{
+    		ID: 7,
+    		Type: "Both",
+    		Name: "Josephine City Hall",
+    		Room: "Council Chambers",
+    		"Street Address": "201 Main Street",
+    		City: "Josephine",
+    		State: "TX",
+    		Zip: "75164",
+    		Longitude: "33.06636",
+    		Latitude: "-96.43309"
+    	},
+    	{
+    		ID: 8,
+    		Type: "Both",
+    		Name: "Lavon City Hall",
+    		Room: "Gym",
+    		"Street Address": "120 School Road",
+    		City: "Lavon",
+    		State: "TX",
+    		Zip: "75166",
+    		Longitude: "33.02636",
+    		Latitude: "-96.56556"
+    	},
+    	{
+    		ID: 9,
+    		Type: "Both",
+    		Name: "New Hope Town Hall",
+    		Room: "Council Chambers",
+    		"Street Address": "121 Rockcrest Road",
+    		City: "New Hope",
+    		State: "TX",
+    		Zip: "75071",
+    		Longitude: "33.21091",
+    		Latitude: "-96.56556"
+    	},
+    	{
+    		ID: 10,
+    		Type: "Both",
+    		Name: "Princeton Public Works Department",
+    		Room: "Conference Room",
+    		"Street Address": "255 Monte Carlo Boulevard",
+    		City: "Princeton",
+    		State: "TX",
+    		Zip: "75047",
+    		Longitude: "33.18083",
+    		Latitude: "-96.49537"
+    	},
+    	{
+    		ID: 11,
+    		Type: "Both",
+    		Name: "Prosper Town Hall",
+    		Room: "Community Room",
+    		"Street Address": "250 W First Street",
+    		City: "Prosper",
+    		State: "TX",
+    		Zip: "75078",
+    		Longitude: "33.23468",
+    		Latitude: "-96.8039"
+    	},
+    	{
+    		ID: 12,
+    		Type: "Election Day",
+    		Name: "Weston Community Center",
+    		Room: "Main Hall",
+    		"Street Address": "117 Main Street",
+    		City: "Weston",
+    		State: "TX",
+    		Zip: "75097",
+    		Longitude: "33.34722",
+    		Latitude: "-96.66892"
+    	},
+    	{
+    		ID: 13,
+    		Type: "Both",
+    		Name: "Wylie Senior Recreation Center",
+    		Room: "Dining Room",
+    		"Street Address": "800 Thomas Street",
+    		City: "Wylie",
+    		State: "TX",
+    		Zip: "75098",
+    		Longitude: "33.0038",
+    		Latitude: "-96.53215"
+    	}
+    ];
+
     /* src/Modal.svelte generated by Svelte v3.32.3 */
 
     const file = "src/Modal.svelte";
@@ -563,19 +728,21 @@ var app = (function () {
     }
 
     /* src/App.svelte generated by Svelte v3.32.3 */
+
+    const { console: console_1 } = globals;
     const file$1 = "src/App.svelte";
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[8] = list[i];
+    	child_ctx[7] = list[i];
     	return child_ctx;
     }
 
-    // (33:2) {#if ZIP === location.zip}
+    // (30:2) {#if ZIP == location.Zip}
     function create_if_block$1(ctx) {
     	let p;
     	let t0;
-    	let t1_value = /*location*/ ctx[8].name + "";
+    	let t1_value = /*location*/ ctx[7].Name + "";
     	let t1;
 
     	const block = {
@@ -584,7 +751,7 @@ var app = (function () {
     			t0 = text("Location: ");
     			t1 = text(t1_value);
     			attr_dev(p, "class", "svelte-j636lo");
-    			add_location(p, file$1, 33, 3, 825);
+    			add_location(p, file$1, 30, 3, 710);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -601,17 +768,17 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(33:2) {#if ZIP === location.zip}",
+    		source: "(30:2) {#if ZIP == location.Zip}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (32:1) {#each placeholderArray as location}
+    // (29:1) {#each locations as location}
     function create_each_block(ctx) {
     	let if_block_anchor;
-    	let if_block = /*ZIP*/ ctx[1] === /*location*/ ctx[8].zip && create_if_block$1(ctx);
+    	let if_block = /*ZIP*/ ctx[1] == /*location*/ ctx[7].Zip && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -623,7 +790,7 @@ var app = (function () {
     			insert_dev(target, if_block_anchor, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (/*ZIP*/ ctx[1] === /*location*/ ctx[8].zip) {
+    			if (/*ZIP*/ ctx[1] == /*location*/ ctx[7].Zip) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -646,7 +813,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(32:1) {#each placeholderArray as location}",
+    		source: "(29:1) {#each locations as location}",
     		ctx
     	});
 
@@ -676,8 +843,8 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	modal.$on("click", /*toggleModal*/ ctx[5]);
-    	let each_value = /*placeholderArray*/ ctx[4];
+    	modal.$on("click", /*toggleModal*/ ctx[4]);
+    	let each_value = locations;
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -709,20 +876,20 @@ var app = (function () {
     			}
 
     			attr_dev(h1, "class", "svelte-j636lo");
-    			add_location(h1, file$1, 26, 1, 528);
+    			add_location(h1, file$1, 23, 1, 421);
     			attr_dev(img, "imgsrc", /*imgSrc*/ ctx[2]);
     			attr_dev(img, "alt", "display");
     			attr_dev(img, "class", "svelte-j636lo");
-    			add_location(img, file$1, 27, 1, 547);
+    			add_location(img, file$1, 24, 1, 440);
     			attr_dev(button, "class", "svelte-j636lo");
-    			add_location(button, file$1, 28, 1, 579);
+    			add_location(button, file$1, 25, 1, 472);
     			attr_dev(b, "class", "svelte-j636lo");
-    			add_location(b, file$1, 29, 1, 629);
+    			add_location(b, file$1, 26, 1, 522);
     			attr_dev(input, "type", "number");
     			attr_dev(input, "placeholder", "Insert ZIP");
     			attr_dev(input, "class", "svelte-j636lo");
-    			add_location(input, file$1, 30, 1, 674);
-    			add_location(main, file$1, 25, 0, 520);
+    			add_location(input, file$1, 27, 1, 567);
+    			add_location(main, file$1, 22, 0, 413);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -751,7 +918,7 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button, "click", /*toggleModal*/ ctx[5], false, false, false),
+    					listen_dev(button, "click", /*toggleModal*/ ctx[4], false, false, false),
     					listen_dev(
     						input,
     						"keytype",
@@ -762,7 +929,7 @@ var app = (function () {
     						false,
     						false
     					),
-    					listen_dev(input, "input", /*input_input_handler*/ ctx[6])
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[5])
     				];
 
     				mounted = true;
@@ -778,8 +945,8 @@ var app = (function () {
     				set_input_value(input, /*ZIP*/ ctx[1]);
     			}
 
-    			if (dirty & /*placeholderArray, ZIP*/ 18) {
-    				each_value = /*placeholderArray*/ ctx[4];
+    			if (dirty & /*locations, ZIP*/ 2) {
+    				each_value = locations;
     				validate_each_argument(each_value);
     				let i;
 
@@ -835,25 +1002,10 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
+    	console.log(`running version ${locations.length}`);
     	let imgSrc = "SvelteAppMedia/downtown-mckinney.jpeg";
     	let header = "McKinney 2021 General Election";
     	let src = "";
-
-    	let placeholderArray = [
-    		{
-    			name: "Anna ISD Administration Building",
-    			zip: 75049
-    		},
-    		{
-    			name: "Blue Ridge ISD Administration",
-    			zip: 75424
-    		},
-    		{
-    			name: "Celina ISD Administration Building",
-    			zip: 75009
-    		}
-    	];
-
     	let showModal = false;
     	let ZIP;
 
@@ -864,7 +1016,7 @@ var app = (function () {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
     	function input_input_handler() {
@@ -873,11 +1025,11 @@ var app = (function () {
     	}
 
     	$$self.$capture_state = () => ({
+    		locations,
     		Modal,
     		imgSrc,
     		header,
     		src,
-    		placeholderArray,
     		showModal,
     		ZIP,
     		toggleModal
@@ -887,7 +1039,6 @@ var app = (function () {
     		if ("imgSrc" in $$props) $$invalidate(2, imgSrc = $$props.imgSrc);
     		if ("header" in $$props) $$invalidate(3, header = $$props.header);
     		if ("src" in $$props) src = $$props.src;
-    		if ("placeholderArray" in $$props) $$invalidate(4, placeholderArray = $$props.placeholderArray);
     		if ("showModal" in $$props) $$invalidate(0, showModal = $$props.showModal);
     		if ("ZIP" in $$props) $$invalidate(1, ZIP = $$props.ZIP);
     	};
@@ -896,15 +1047,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [
-    		showModal,
-    		ZIP,
-    		imgSrc,
-    		header,
-    		placeholderArray,
-    		toggleModal,
-    		input_input_handler
-    	];
+    	return [showModal, ZIP, imgSrc, header, toggleModal, input_input_handler];
     }
 
     class App extends SvelteComponentDev {

@@ -1,0 +1,146 @@
+[
+    {
+        "ID": 1,
+        "Type": "Both",
+        "Name": "Anna ISD Administration Building",
+        "Room": "Board Conference Room",
+        "Street Address": "201 E 7th Street",
+        "City": "Anna",
+        "State": "TX",
+        "Zip": "75049",
+        "Longitude": "33.346207",
+        "Latitude": "-96.547211"
+    }, {
+        "ID": 2,
+        "Type": "Election Day",
+        "Name": "Blue Ridge ISD Administration",
+        "Room": "Board Room",
+        "Street Address": "318 West School Street",
+        "City": "Blue Ridge",
+        "State": "TX",
+        "Zip": "75424",
+        "Longitude": "33.30546",
+        "Latitude": "-96.40425"
+    }, {
+        "ID": 3,
+        "Type": "Both",
+        "Name": "Celina ISD Administration Building",
+        "Room": "Gym",
+        "Street Address": "205 S Colorado Street",
+        "City": "Celina",
+        "State": "TX",
+        "Zip": "75009",
+        "Longitude": "33.32303",
+        "Latitude": "-96.78852"
+    }, {
+        "ID": 4,
+        "Type": "Both",
+        "Name": "Collin County Elections Office",
+        "Room": "Voting Room",
+        "Street Address": "2010 Redbud Boulevard, Suite 102",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75069",
+        "Longitude": "33.21976",
+        "Latitude": "-96.62817"
+    }, {
+        "ID": 5,
+        "Type": "Both",
+        "Name": "Farmersville City Hall",
+        "Room": "Council Chambers",
+        "Street Address": "205 S Main Street",
+        "City": "Farmersville",
+        "State": "TX",
+        "Zip": "75442",
+        "Longitude": "33.16128",
+        "Latitude": "-96.35975"
+    }, {
+        "ID": 6,
+        "Type": "Both",
+        "Name": "First Melissa",
+        "Room": "Building B Foyer",
+        "Street Address": "2101 E Melissa Road",
+        "City": "Melissa",
+        "State": "TX",
+        "Zip": "75454",
+        "Longitude": "33.28182",
+        "Latitude": "-96.5667"
+    }, {
+        "ID": 7,
+        "Type": "Both",
+        "Name": "Josephine City Hall",
+        "Room": "Council Chambers",
+        "Street Address": "201 Main Street",
+        "City": "Josephine",
+        "State": "TX",
+        "Zip": "75164",
+        "Longitude": "33.06636",
+        "Latitude": "-96.43309"
+    }, {
+        "ID": 8,
+        "Type": "Both",
+        "Name": "Lavon City Hall",
+        "Room": "Gym",
+        "Street Address": "120 School Road",
+        "City": "Lavon",
+        "State": "TX",
+        "Zip": "75166",
+        "Longitude": "33.02636",
+        "Latitude": "-96.56556"
+    }, {
+        "ID": 9,
+        "Type": "Both",
+        "Name": "New Hope Town Hall",
+        "Room": "Council Chambers",
+        "Street Address": "121 Rockcrest Road",
+        "City": "New Hope",
+        "State": "TX",
+        "Zip": "75071",
+        "Longitude": "33.21091",
+        "Latitude": "-96.56556"
+    }, {
+        "ID": 10,
+        "Type": "Both",
+        "Name": "Princeton Public Works Department",
+        "Room": "Conference Room",
+        "Street Address": "255 Monte Carlo Boulevard",
+        "City": "Princeton",
+        "State": "TX",
+        "Zip": "75047",
+        "Longitude": "33.18083",
+        "Latitude": "-96.49537"
+    }, {
+        "ID": 11,
+        "Type": "Both",
+        "Name": "Prosper Town Hall",
+        "Room": "Community Room",
+        "Street Address": "250 W First Street",
+        "City": "Prosper",
+        "State": "TX",
+        "Zip": "75078",
+        "Longitude": "33.23468",
+        "Latitude": "-96.8039"
+    }, {
+        "ID": 12,
+        "Type": "Election Day",
+        "Name": "Weston Community Center",
+        "Room": "Main Hall",
+        "Street Address": "117 Main Street",
+        "City": "Weston",
+        "State": "TX",
+        "Zip": "75097",
+        "Longitude": "33.34722",
+        "Latitude": "-96.66892"
+    }, {
+        "ID": 13,
+        "Type": "Both",
+        "Name": "Wylie Senior Recreation Center",
+        "Room": "Dining Room",
+        "Street Address": "800 Thomas Street",
+        "City": "Wylie",
+        "State": "TX",
+        "Zip": "75098",
+        "Longitude": "33.0038",
+        "Latitude": "-96.53215"
+    }
+]

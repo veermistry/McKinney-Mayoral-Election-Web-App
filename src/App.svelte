@@ -1,4 +1,7 @@
 <script>
+	import locations from './locations.json';
+	console.log(`running version ${locations.length}`);
+
 	import Modal from './Modal.svelte'
 
 	let imgSrc = 'SvelteAppMedia/downtown-mckinney.jpeg'
@@ -6,12 +9,6 @@
 	let header = 'McKinney 2021 General Election';
 
 	let src = ''
-
-	let placeholderArray = [
-		{ name: 'Anna ISD Administration Building', zip: 75049},
-		{ name: 'Blue Ridge ISD Administration', zip: 75424},
-		{ name: 'Celina ISD Administration Building', zip:75009}
-	]
 
 	let showModal = false;
 
@@ -29,9 +26,9 @@
 	<button on:click={toggleModal}>REGISTER</button>
 	<b>Find a voting location in your area!</b>
 	<input on:keytype={ZIP} type="number" placeholder="Insert ZIP" bind:value={ZIP}>
-	{#each placeholderArray as location}
-		{#if ZIP === location.zip}
-			<p>Location: {location.name}</p>
+	{#each locations as location}
+		{#if ZIP == location.Zip}
+			<p>Location: {location.Name}</p>
 		{/if}
 	{/each}
 </main>
