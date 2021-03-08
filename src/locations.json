@@ -9,7 +9,8 @@
         "State": "TX",
         "Zip": "75049",
         "Longitude": "33.346207",
-        "Latitude": "-96.547211"
+        "Latitude": "-96.547211",
+        "MapsLink": "https://www.google.com/maps/place/201+E+7th+St,+Anna,+TX+75409/@33.3459207,-96.549416,17z/data=!3m1!4b1!4m5!3m4!1s0x864c722569d27345:0x9946be998630d896!8m2!3d33.3459207!4d-96.5472327"
     }, {
         "ID": 2,
         "Type": "Election Day",
@@ -20,7 +21,8 @@
         "State": "TX",
         "Zip": "75424",
         "Longitude": "33.30546",
-        "Latitude": "-96.40425"
+        "Latitude": "-96.40425",
+        "MapsLink": "https://www.google.com/maps/place/318+School+St,+Blue+Ridge,+TX+75424/@33.3053024,-96.4063836,17z/data=!3m1!4b1!4m5!3m4!1s0x864b8a9ceee18afd:0x53b8470d2bc7a6ca!8m2!3d33.3053024!4d-96.4042003"
     }, {
         "ID": 3,
         "Type": "Both",
@@ -31,7 +33,8 @@
         "State": "TX",
         "Zip": "75009",
         "Longitude": "33.32303",
-        "Latitude": "-96.78852"
+        "Latitude": "-96.78852",
+        "MapsLink": "https://www.google.com/maps/place/205+S+Colorado+St,+Celina,+TX+75009/@33.3227598,-96.7879198,3a,75y,101.61h,90t/data=!3m7!1e1!3m5!1sSuJCBr_A6lBfC2AxI_srxQ!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DSuJCBr_A6lBfC2AxI_srxQ%26output%3Dthumbnail%26cb_client%3Dsearch.gws-prod.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D101.61207%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x864c419f1eae233d:0xeae268e5ce91d1de!8m2!3d33.3228011!4d-96.7885113"
     }, {
         "ID": 4,
         "Type": "Both",
@@ -42,7 +45,8 @@
         "State": "TX",
         "Zip": "75069",
         "Longitude": "33.21976",
-        "Latitude": "-96.62817"
+        "Latitude": "-96.62817",
+        "MapsLink": "https://www.google.com/maps/place/2010+Redbud+Blvd+Suite+102,+McKinney,+TX+75069/@33.2198637,-96.6293986,18z/data=!4m5!3m4!1s0x864c13071c3fffff:0x6d751c9053bd878b!8m2!3d33.2196956!4d-96.6281564"
     }, {
         "ID": 5,
         "Type": "Both",
@@ -53,7 +57,8 @@
         "State": "TX",
         "Zip": "75442",
         "Longitude": "33.16128",
-        "Latitude": "-96.35975"
+        "Latitude": "-96.35975",
+        "MapsLink": "https://www.google.com/maps/place/Farmersville+City+Hall/@33.161077,-96.3620083,17z/data=!3m1!4b1!4m5!3m4!1s0x864bf6f38077042b:0x34f86fe7c651ab13!8m2!3d33.161077!4d-96.359825"
     }, {
         "ID": 6,
         "Type": "Both",
@@ -64,7 +69,8 @@
         "State": "TX",
         "Zip": "75454",
         "Longitude": "33.28182",
-        "Latitude": "-96.5667"
+        "Latitude": "-96.5667",
+        "MapsLink": "https://www.google.com/maps/place/First+Melissa/@33.2820014,-96.5686887,17z/data=!3m1!4b1!4m5!3m4!1s0x864c72a30b59e83b:0x5b576f9736864025!8m2!3d33.2820014!4d-96.5665054"
     }, {
         "ID": 7,
         "Type": "Both",
@@ -75,7 +81,8 @@
         "State": "TX",
         "Zip": "75164",
         "Longitude": "33.06636",
-        "Latitude": "-96.43309"
+        "Latitude": "-96.43309",
+        "MapsLink": "https://www.google.com/maps/place/Josephine+City+Hall/@33.0620708,-96.3120151,17z/data=!3m1!4b1!4m5!3m4!1s0x864bfa31a68bff09:0x12452808733cbf34!8m2!3d33.0620708!4d-96.3098318"
     }, {
         "ID": 8,
         "Type": "Both",
