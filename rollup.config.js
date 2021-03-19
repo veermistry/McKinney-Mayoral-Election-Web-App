@@ -72,7 +72,6 @@ export default {
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
 		!production && serve(),
-		livereload(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
