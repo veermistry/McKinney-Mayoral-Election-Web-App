@@ -1,3 +1,4 @@
+import sveltePreprocess from "svelte-preprocess";
 import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
@@ -39,6 +40,15 @@ export default {
 	},
 	plugins: [
 		svelte({
+			preprocess: sveltePreprocess({
+				sourceMap: !production,
+				postcss: {
+				  plugins: [
+				   require("tailwindcss"), 
+				   require("autoprefixer"),
+				  ],
+				},
+			  }),
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
@@ -62,6 +72,7 @@ export default {
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
 		!production && serve(),
+		livereload(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
