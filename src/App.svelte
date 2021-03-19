@@ -68,7 +68,7 @@
                 </ul>
                
                 <div class="grid md:grid-cols-2">
-					<label class="block">
+					<div class="block">
                         <div class="ml-5">
 								<span class="text-gray-700 font-main">Location QuickSearch:</span>
                             	<!--input type="form" class="form-input block mt-1 w-56 border border-blue-900" placeholder="Enter your ZIP code here!"-->
@@ -84,7 +84,7 @@
 									{/if}
 								{/each}
                         </div>
-                    </label>
+                    </div>
 					<div class="block">
 						<img src="img/downtown-mckinney.jpeg" alt="downtown" class="justify-start m-5 shadow-lg h-36 w-64" >
 					</div>
