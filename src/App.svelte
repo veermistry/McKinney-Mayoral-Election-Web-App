@@ -1,4 +1,6 @@
 <script>
+	import Dialog from '@fouita/dialog'
+
 	import Flex from 'svelte-flex';
 
 	import * as geolib from 'geolib';
@@ -24,10 +26,6 @@
 	
 	const toggleModal = () => {
 		showModal =  !showModal;
-		if (z_index_val == 0)
-			z_index_val = -1;
-		else
-		z_index_val = 0;
 	}
 
 	const findDistance = () => {
@@ -36,6 +34,14 @@
     		{ latitude: "40.7580", longitude: "73.9855" }
 		);
 	}
+
+	window.addEventListener
+	('DOMContentLoaded', () =>{
+		const register = document.querySelector('#Register')
+		const close = document.querySelector('#close')
+
+
+	})
 
 </script>
 
@@ -49,11 +55,11 @@
                         <a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
                     </h1>
                 </div>
-                <ul class="flex items-start pb-10 md:justify-center w-full">
-                    <li class="text-gray-400 font-main uppercase mt-12">
-                        <a href="/">
-                            <span class="text-base border-b border-blue-900">Register</span>
-                        </a>
+                <ul class="flex items-start px-10 pb-10 md:justify-center w-full">
+                    <li id = "Register" class="text-gray-400 font-main uppercase mt-12">
+						<button on:click={toggleModal}>
+							<span class="text-base font-main border-b border-blue-900 sm: text">REGISTER</span>
+						</button>
                     </li>
                     <li class="text-gray-400 font-main uppercase mt-12">
                         <a href="/">
@@ -66,7 +72,31 @@
                         </a>
                     </li>
                 </ul>
-               
+				<div id="background" class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center">
+					<div class="bg-white py-1 px-2 rounded shadow-xl">
+						<div class = "px-1">
+							<div class="flex justify-center items-center">
+								<h1>Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
+							</div>
+            				<b>Are you eligible to vote?</b>
+            				<p>You are eligible if:
+                			<br>
+                			<br> • You are a United States citizen; <br>
+                			<br> • You are a resident of the county where you submit the application; <br>
+                			<br> • You are at least 17 years and 10 months old, and you are 18 years of age on
+                			Election Day. <br>
+                			<br> • You are not a convicted felon (you may be eligible to vote if you have completed your sentence, probation, and parole); and <br>
+                			<br> • You have not been declared by a court exercising probate jurisdiction to be either totally mentally incapacitated or partially mentally incapacitated without the right to vote.
+            				</p>
+							<div class="flex justify-end items-end px-2">
+								<small>information from <a href="https://www.votetexas.gov/register/index.html">https://www.votetexas.gov/register/index.html</a></small>
+							</div>
+							<div id="close">
+								Close screen
+							</div>
+						</div>
+					</div>
+				</div>
                 <div class="grid md:grid-cols-2">
 					<div class="block">
                         <div class="ml-5">
@@ -97,18 +127,20 @@
             <header>
                 <h2 class="text-black font-bold text-lg ml-3">What Election?</h2>
             </header>
-                <p class="w-full">
-                    On May 1st, 2021, voters in McKinney will elect representatives for these positions in City Council:
-                    <br> <br>
-                    • Mayor <br>
-                    • District 1 <br>
-                    • District 3 <br>
-                    • At Large 1 <br>
-                    <br>
-                    Mayoral Candidates: 
-                    <small class="text-gray-500">Click on their names to go to their webpages.</small>
-                </p>
-				<div class="grid md:grid-cols-3 rounded-md overflow-hidden gap-10 px-5">
+				<div class="justify-center items-center">
+					<p class="w-full ml-4">
+						On May 1st, 2021, voters in McKinney will elect representatives for these positions in City Council:
+						<br> <br>
+						• Mayor <br>
+						• District 1 <br>
+						• District 3 <br>
+						• At Large 1 <br>
+						<br>
+						Mayoral Candidates: 
+						<small class="text-gray-500">Click on their names to go to their webpages.</small>
+					</p>
+				</div>
+				<div class="grid md:grid-cols-3 md:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 rounded-md overflow-hidden gap-10 px-5">
 					<div class="bg-gray-200 shadow-xl">
 						<img src="img/George_Fuller.jpeg" alt="George Fuller" class="w-full h-60 object-cover content-center shadow-md">
 						<div>
@@ -131,7 +163,72 @@
 						</div>
 					</div>
 				</div>
-				
+				<div class="ml-4">
+					<p>
+						<br>
+						District 1 Candidates: 
+						<small class="text-gray-500">Click on their names to go to their webpages.</small>
+						<br>
+					</p>
+				</div>
+				<div class="grid grid-rows-3 grid-cols-2 md:grid-cols-5 md:grid-rows-1 rounded-md overflow-hidden gap-5 px-5">
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Cristoval (Cris) Treviño</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Johnny Moore</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Justin Beller</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Stanley Penn</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Thomas Tolan</a></span>
+							<span class="block">George info</span>
+					</div>
+				</div>
+				<div class="ml-4">
+					<p>
+						<br>
+						District 3 Candidates: 
+						<small class="text-gray-500">Click on their names to go to their webpages.</small>
+						<br>
+					</p>
+				</div>
+				<div class="grid grid-cols-2 rounded-md overflow-hidden gap-5 px-5">
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Gere' Feltus</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Vicente Torres</a></span>
+							<span class="block">George info</span>
+					</div>
+				</div>
+				<div class="ml-4">
+					<p>
+						<br>
+						At Large 1 Candidates: 
+						<small class="text-gray-500">Click on their names to go to their webpages.</small>
+						<br>
+					</p>
+				</div>
+				<div class="grid grid-rows-1 grid-cols-2 rounded-md overflow-hidden gap-5 px-5 mb-10">
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Brian J. Magnuson</a></span>
+							<span class="block">George info</span>
+					</div>
+					<div class="bg-gray-200 shadow-xl">
+						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Charlie Philips</a></span>
+							<span class="block">George info</span>
+					</div>
+				</div>
                 <!--div class="flex items-start text-bold">
                     <div class="flex-1 bg-gray-300 m-5 text-center shadow-xl" > Current Mayor: <a href="https://www.mckinneytexas.org/1167/Council-Members#Biographies" target="_blank" class="underline">George Fuller</a> </div>
                     <div class="flex-1 bg-gray-300 m-5 text-center shadow-xl" > <a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Jimmy Stewart</a></div>

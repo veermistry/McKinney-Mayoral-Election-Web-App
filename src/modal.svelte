@@ -16,7 +16,8 @@
                 <br> • You are not a convicted felon (you may be eligible to vote if you have completed your sentence, probation, and parole); and <br>
                 <br> • You have not been declared by a court exercising probate jurisdiction to be either totally mentally incapacitated or partially mentally incapacitated without the right to vote.
             </p>
-            <small>information from <a href="https://www.votetexas.gov/register/index.html">https://www.votetexas.gov/register/index.html</a></small>
+            <small>information from <a href="https://www.votetexas.gov/register/index.html">https://www.votetexas.gov/register/index.html</a>
+            <br> Click anywhere in the background to exit.</small>
         </div>
     </div>
 {/if}
@@ -47,6 +48,9 @@ p{
 }
 a{
     color: red;
+}
+b{
+    color: #0024d6;
 }
 
 </style> 
