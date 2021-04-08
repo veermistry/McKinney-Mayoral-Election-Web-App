@@ -93,7 +93,8 @@
         "State": "TX",
         "Zip": "75166",
         "Longitude": "33.02636",
-        "Latitude": "-96.56556"
+        "Latitude": "-96.56556",
+        "MapsLink": "https://www.google.com/maps/place/Lavon+City+Hall/@33.0262206,-96.4353025,17z/data=!3m1!4b1!4m5!3m4!1s0x864c0730f3305765:0x6c7246cb75fe89c2!8m2!3d33.0262206!4d-96.4331138"
     }, {
         "ID": 9,
         "Type": "Both",
@@ -104,7 +105,8 @@
         "State": "TX",
         "Zip": "75071",
         "Longitude": "33.21091",
-        "Latitude": "-96.56556"
+        "Latitude": "-96.56556",
+        "MapsLink": "https://www.google.com/maps/place/New+Hope/@33.2108856,-96.5830662,14z/data=!4m8!1m2!2m1!1snew+hope+town+hall!3m4!1s0x864c0d9af2595555:0x7d8945ed2061b964!8m2!3d33.2108856!4d-96.5655567"
     }, {
         "ID": 10,
         "Type": "Both",
@@ -115,7 +117,8 @@
         "State": "TX",
         "Zip": "75047",
         "Longitude": "33.18083",
-        "Latitude": "-96.49537"
+        "Latitude": "-96.49537",
+        "MapsLink": "https://www.google.com/maps/place/City+of+Princeton+Public+Works/@33.1901803,-96.5006727,17z/data=!3m1!4b1!4m5!3m4!1s0x864c0d3ee903db75:0xd0a8660027355c4f!8m2!3d33.1901803!4d-96.5006727"
     }, {
         "ID": 11,
         "Type": "Both",
@@ -126,7 +129,8 @@
         "State": "TX",
         "Zip": "75078",
         "Longitude": "33.23468",
-        "Latitude": "-96.8039"
+        "Latitude": "-96.8039",
+        "MapsLink": "https://www.google.com/maps/place/Prosper+Town+Hall/@33.2344718,-96.8038436,17z/data=!3m1!4b1!4m5!3m4!1s0x864c3f6dec637023:0xa07ee4716367d967!8m2!3d33.2344718!4d-96.8038436"
     }, {
         "ID": 12,
         "Type": "Election Day",
@@ -137,7 +141,8 @@
         "State": "TX",
         "Zip": "75097",
         "Longitude": "33.34722",
-        "Latitude": "-96.66892"
+        "Latitude": "-96.66892",
+        "MapsLink": "https://www.google.com/maps/place/Weston+Community+Center/@33.3470018,-96.6689258,17z/data=!3m1!4b1!4m5!3m4!1s0x864c6bfe79ce1409:0x1720939b6c4431a!8m2!3d33.3470018!4d-96.6689258"
     }, {
         "ID": 13,
         "Type": "Both",
@@ -148,6 +153,7 @@
         "State": "TX",
         "Zip": "75098",
         "Longitude": "33.0038",
-        "Latitude": "-96.53215"
+        "Latitude": "-96.53215",
+        "MapsLink": "https://www.google.com/maps/place/Wylie+Senior+Recreation+Center/@33.0035465,-96.5321584,17z/data=!3m1!4b1!4m5!3m4!1s0x864c047e9c8ba3f3:0x2fe02ef9d17f3116!8m2!3d33.0035465!4d-96.5321584"
     }
 ]
