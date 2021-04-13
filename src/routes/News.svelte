@@ -7,9 +7,18 @@
 			<a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
 		</h1>
 	</div>
-	<div class = "flex justify-center mt-10">
-		<h1 class="text-xl font-semibold">News page</h1>
-	</div>
+	<ul class="flex items-start px-10 pb-10 justify-center w-full">
+		<li class="text-gray-400 font-main uppercase mt-12 ">
+			<a href="/">
+				<span class="font-main text-base border-b border-blue-900 m-7">HOME</span>
+			</a>
+		</li>
+		<li class="text-gray-400 font-main uppercase mt-12">
+			<a href="/news">
+				<span class="text-base text-blue-800 font-main m-7 border-b border-blue-900 sm: text">News</span>
+			</a>
+		</li>
+	</ul>
 	<div class="h-screen overflow-scroll">
 		<div class="grid grid-cols-1 gap-6 my-6 px-4 md:px-6 lg:px-8">
 			<div class="max-w-xl mx-auto px-4 py-4 bg-white shadow-md rounded-lg">

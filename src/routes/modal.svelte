@@ -1,18 +1,25 @@
 <script>
-    export let showModal = false;
-    export let isPromo = false;
+    export let visible = false;
+
+    export function show() {
+        visible = true;
+    }
+
+    export function hide() {
+        visible = false;
+    }
 </script>
-{#if showModal}
-    <div class="backdrop" class:promo={isPromo} on:click|self>
-        <div class="modal">
+{#if visible}
+    <div class="backdrop" on:click={hide}>
+        <div class="modal" on:click|stopPropagation>
+            <button on:click={hide} class="float-right text-md background-transparent focus:outline-none mr-1 nb-1 ease-linear transition-all duration-150">X</button>
             <h1>Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
             <b>Are you eligible to vote?</b>
             <p>You are eligible if:
                 <br>
                 <br> • You are a United States citizen; <br>
                 <br> • You are a resident of the county where you submit the application; <br>
-                <br> • You are at least 17 years and 10 months old, and you are 18 years of age on
-                Election Day. <br>
+                <br> • You are at least 17 years and 10 months old, and you are 18 years of age on Election Day. <br>
                 <br> • You are not a convicted felon (you may be eligible to vote if you have completed your sentence, probation, and parole); and <br>
                 <br> • You have not been declared by a court exercising probate jurisdiction to be either totally mentally incapacitated or partially mentally incapacitated without the right to vote.
             </p>
