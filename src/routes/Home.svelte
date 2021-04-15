@@ -9,6 +9,10 @@
 
     import visible from './modal.svelte';
 
+	import Slider from '@fouita/slider';
+
+	let val_tax = 20;
+
 	import locations from './locations.json';
 	(`running version ${locations.length}`);
 
@@ -20,7 +24,7 @@
         // convert meters to miles
 		console.log(locationx.Latitude + " " + locationx.Longitude)
         return (0.000621371192 * geolib.getDistance(
-            { latitude: locationx.Longitude, longitude: locationx.Latitude},
+            { latitude: locationx.Latitude, longitude: locationx.Longitude},
             {latitude: location.latitude, longitude: location.longitude }
         )).toFixed(1);
     };
@@ -124,7 +128,7 @@
 									{#if ZIP == location.Zip}
 										<span class="block"><a href={location.MapsLink} target="_blank">Location: <u>{location.Name}, {location.Room}</u></a>
 										<p>This location is {geolib.getDistance(
-											{latitude: location.Longitude, longitude: location.Latitude},
+											{latitude: location.Latitude, longitude: location.Longitude},
 											{latitude: 40.7580, longitude: 73.9855}
 										)} meters from Times Square NYC!</p>
 										</span>
@@ -135,10 +139,15 @@
                     <div class="block">
 						<img src="img/downtown-mckinney.jpeg" alt="downtown" class="justify-start m-5 shadow-lg h-36 w-64" >
 					</div>
-                    <div class="block ">
+                    <div class="block mx-3">
                         <h1>All Voting Locations & Rooms</h1>
                         <div class=" w-2/3 h-44 overflow-scroll shadow-inner">
                             <table class="table-auto">
+								<thead>
+									<tr class = "text-sm">
+											Click on the name of the location to get directions.
+									</tr>
+								</thead>
                                 <tbody>
                                     {#each locations as location}
                                         <tr>
@@ -194,20 +203,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex items-stretch">
-					<h1>Less taxes</h1>
-					<div class="flex justify-center">
-						<input class="rounded-lg overflow-hidden appearance-none bg-gray-400 h-3 w-2/3" type="range" min="1" max="100" step="1" value="15" />
-					</div>
-					<h1>More public services</h1>
+				<div class="p-6 text-3xl text-center">
+					{val_tax} 
 				</div>
-				<div class="ml-4">
-					<p>
-						<br>
-						District 1 Candidates: 
-						<small class="text-gray-500">Click on their names to go to their webpages.</small>
-						<br>
-					</p>
+				<Slider class="mt-5 mx-6" max={100} bind:val_tax/>
+				<div class="ml-4 mt-10">
+						<p> 
+							District 1 Candidates: 
+							<small class="text-gray-500 my-10">Click on their names to go to their webpages.</small>
+						</p>
 				</div>
 				<div class="grid grid-rows-3 grid-cols-2 lg:grid-cols-5 lg:grid-rows-1 rounded-md overflow-hidden gap-5 px-5">
 					<div class="bg-gray-200 shadow-xl rounded-md">
@@ -278,21 +282,6 @@
 		@tailwind base;
 		@tailwind components;
 		@tailwind utilities;
-
-        @media screen and (-webkit-min-device-pixel-ratio: 0) {
-     
-        input[type="range"]::-webkit-slider-thumb {
-            width: 15px;
-            -webkit-appearance: none;
-            appearance: none;
-            height: 15px;
-            cursor: ew-resize;
-            background: #FFF;
-            box-shadow: -405px 0 0 400px #605E5C;
-            border-radius: 50%;
-         
-            }
-        }
     </style>
 </svelte:head>
 

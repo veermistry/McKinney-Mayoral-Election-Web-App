@@ -19,8 +19,9 @@
 			</a>
 		</li>
 	</ul>
-	<div class="h-screen overflow-scroll">
-		<div class="grid grid-cols-1 gap-6 my-6 px-4 md:px-6 lg:px-8">
+	<div class="h-screen overflow-scroll mx-5 md:mx-10 shadow-inner">
+		<a class="twitter-timeline" href="https://twitter.com/VeerMistry2?ref_src=twsrc%5Etfw">Tweets by VeerMistry2</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<!--div class="grid grid-cols-1 gap-6 my-6 px-4 md:px-6 lg:px-8">
 			<div class="max-w-xl mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
 			  <div class="py-2 flex flex-row items-center justify-between">
 				<div class="flex flex-row items-center">
@@ -118,7 +119,7 @@
 				</div>
 			  </div>
 			</div>
-		  </div>
+		  </div-->
 	</div>
 </div>
 
