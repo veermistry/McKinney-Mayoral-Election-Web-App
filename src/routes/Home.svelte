@@ -13,6 +13,8 @@
 
 	let val_tax = 20;
 
+	let markerbase = 0;
+
 	import locations from './locations.json';
 	(`running version ${locations.length}`);
 
@@ -118,6 +120,63 @@
 						{/each}}
 						<p> Your closest location: {closestLocation}. </p>
 					{/if}
+				</div>
+				<div class="my-10">
+					<div id = "map"></div>
+					<script>
+						function initMap(){
+							var options = {
+								zoom:10,
+								center:{lat:33.1983,lng:-96.6389}
+							}
+
+							var map = new 
+							google.maps.Map(document.getElementById('map'), options);
+
+							addMarker({coords:{lat: 33.346207, lng: -96.547211}});
+
+							function addMarker(props){
+								var marker = new google.maps.Marker({
+								position:props.coords,
+								map:map 
+							});
+							}
+							/*marker1 = new google.maps.Marker({
+								position:{lat: 33.346207, lng: -96.547211},
+								map:map
+							});
+							var infoWindow = new google.maps.InfoWindow({
+								content: '<a href={locations.MapsLink}></a>'
+							});
+							marker1.addListener('click', function)
+							marker2 = new google.maps.Marker({
+								position:{lat:33.30546, lng: -96.40425},
+								map:map
+							});
+							
+
+							marker3 = new google.maps.Marker({
+								position:{lat:33.32303, lng:-96.78852},
+								map:map
+							});
+							
+
+							marker4 = new google.maps.Marker({
+								position:{lat:33.32303, lng:-96.78852},
+								map:map
+							});
+							
+							marker5 = new google.maps.Marker({
+								position:{lat:33.16128,lng:-96.35975},
+								map:map
+							});*/
+
+						}
+					</script>
+					<script
+      				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly"
+      				async
+    >				</script>
 				</div>
                 <div class="grid mx-5 md:grid-cols-3">
 					<div class="block">
@@ -282,6 +341,11 @@
 		@tailwind base;
 		@tailwind components;
 		@tailwind utilities;
+
+		#map{
+			height:400px;
+			width:100%;
+		}
     </style>
 </svelte:head>
 
