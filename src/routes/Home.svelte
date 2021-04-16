@@ -174,8 +174,8 @@
 						}
 					</script>
 					<script
-      				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly"
-      				async
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly"
+					async
     >				</script>
 				</div>
                 <div class="grid mx-5 md:grid-cols-3">
