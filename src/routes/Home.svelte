@@ -75,60 +75,12 @@
 
     let registerModal;
 
-    let colorcount = 0;
-
-</script>
-
-<Modal bind:this={registerModal}/>
-<main>
-
-	<div>
-        <div>
-            <nav>
-                <div class = "shadow-md">
-                    <h1 class="font-main p-4 text-black bg-gray-50">
-                        <a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
-                    </h1>
-                </div>
-				<ul class="flex items-start px-10 pb-10 justify-center w-full">
-                    <li class="text-gray-400 font-main uppercase mt-12 ">
-                        <a href="/">
-                            <span class="font-main text-base text-blue-800 border-b border-blue-900 m-7">HOME</span>
-                        </a>
-                    </li>
-                    <li id = "Register" class="text-gray-400 font-main uppercase mt-12">
-						<button on:click={registerModal.show}>
-							<span class="text-base font-main border-b border-blue-900 sm: text">REGISTER</span>
-						</button>
-                    </li>
-                    <li class="text-gray-400 font-main uppercase mt-12">
-                        <a href="/news">
-                            <span class="text-base font-main m-7 border-b border-blue-900 sm: text">News</span>
-                        </a>
-                    </li>
-                </ul>
-				<div class = "flex justify-center">
-					<button on:click={triggerNearest}>
-						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
-					</button>
-					{#if showNearest}
-						{#each locations as locationx}
-							{#if getDistanceInMiles(locationx) <= closestDist}
-								{assignVals(locationx)}
-								<!--{console.log(closestDist + " " + closestLocation)}-->
-							{/if}
-						{/each}}
-						<p> Your closest location: {closestLocation}. </p>
-					{/if}
-				</div>
-				<div class="my-10">
-					<div id = "map"></div>
-					<script>
-						function initMap(){
+    function initMap(){
 							var options = {
 								zoom:9,
 								center:{lat:33.1983,lng:-96.6389}
 							}
+	}
 
 							var map = new 
 							google.maps.Map(document.getElementById('map'), options);
@@ -207,6 +159,56 @@
 								});
 							}
 
+
+</script>
+
+<Modal bind:this={registerModal}/>
+<main>
+
+	<div>
+        <div>
+            <nav>
+                <div class = "shadow-md">
+                    <h1 class="font-main p-4 text-black bg-gray-50">
+                        <a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
+                    </h1>
+                </div>
+				<ul class="flex items-start px-10 pb-10 justify-center w-full">
+                    <li class="text-gray-400 font-main uppercase mt-12 ">
+                        <a href="/">
+                            <span class="font-main text-base text-blue-800 border-b border-blue-900 m-7">HOME</span>
+                        </a>
+                    </li>
+                    <li id = "Register" class="text-gray-400 font-main uppercase mt-12">
+						<button on:click={registerModal.show}>
+							<span class="text-base font-main border-b border-blue-900 sm: text">REGISTER</span>
+						</button>
+                    </li>
+                    <li class="text-gray-400 font-main uppercase mt-12">
+                        <a href="/news">
+                            <span class="text-base font-main m-7 border-b border-blue-900 sm: text">News</span>
+                        </a>
+                    </li>
+                </ul>
+				<div class = "flex justify-center">
+					<button on:click={triggerNearest}>
+						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
+					</button>
+					{#if showNearest}
+						{#each locations as locationx}
+							{#if getDistanceInMiles(locationx) <= closestDist}
+								{assignVals(locationx)}
+								<!--{console.log(closestDist + " " + closestLocation)}-->
+							{/if}
+						{/each}}
+						<p> Your closest location: {closestLocation}. </p>
+					{/if}
+				</div>
+				<div class="my-10">
+					<div id = "map"></div>
+					<script>
+
+							
 						}
 					</script>
 					<script
