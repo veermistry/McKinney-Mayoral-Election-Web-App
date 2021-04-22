@@ -76,7 +76,6 @@
     let registerModal;
 
 	import Map from './Map.svelte'; 
-	export let ready;
 
     /*function initMap(){
 							var options = {
@@ -166,10 +165,6 @@
 </script>
 
 <svelte:head>
-	<script defer async
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly">
-		
-	</script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -229,12 +224,96 @@
 				</div>
 				<div class="my-10">
 					<div id = "map">
-					{#if ready}
-						<Map></Map>
-					{/if}
+						<script>
+							function initMap(){
+							var options = {
+								zoom:9,
+								center:{lat:33.1983,lng:-96.6389}
+							}
+	}
+
+							var map = new 
+							google.maps.Map(document.getElementById('map'), options);
+
+							addMarker({
+								coords:{lat: 33.346207, lng: -96.547211},
+								content: '<small>Anna ISD Administration Building</small>'
+							});
+							addMarker({
+								coords:{lat:33.30546, lng: -96.40425},
+								content: '<small>Blue Ridge ISD Administration</small>'
+							});
+							addMarker({
+								coords:{lat:33.32303, lng:-96.78852},
+								content: '<small>Celina ISD Administration Building</small>'
+							});
+							addMarker({
+								coords:{lat:33.21976, lng:-96.62817},
+								content: '<small>Collin County Elections Office</small>'
+							});
+							addMarker({
+								coords:{lat:33.16128, lng:-96.35975},
+								content: '<small>Farmersville City Hall</small>'
+							});
+							addMarker({
+								coords:{lat:33.28182, lng: -96.5667},
+								content: '<small>First Melissa</small>'
+							});
+							addMarker({
+								coords:{lat:33.06636, lng: -96.43309},
+								content: '<small>Josephine City Hall</small>'
+							});
+							addMarker({
+								coords:{lat:33.02636, lng:-96.56556},
+								content: '<small>Lavon City Hall</small>'
+							});
+							addMarker({
+								coords:{lat:33.21091, lng:-96.56556},
+								content: '<small>New Hope Town Hall</small>'
+							});
+							addMarker({
+								coords:{lat:33.18083, lng: -96.49537},
+								content: '<small>Princeton Public Works Department</small>'
+							});
+							addMarker({
+								coords:{lat:33.23468, lng:-96.8039},
+								content: '<small>Prosper Town Hall</small>'
+							});
+							addMarker({
+								coords:{lat:33.34722, lng:-96.66892},
+								content: '<small>Weston Community Center</small>'
+							});
+							addMarker({
+								coords:{lat:33.0038, lng: -96.53215},
+								content: '<small>Wylie Senior Recreation Center</small>'
+							});
+
+							function addMarker(props){
+								var marker = new google.maps.Marker({
+								position:props.coords,
+								map:map 
+							});
+							}
+
+							if(props.iconImage){
+								marker.setIcon(props.iconImage);
+							}
+
+							if(props.content){
+								var infoWindow = new google.maps.infoWindow({
+									content:props.content
+								});
+
+								marker.addListener('click', function(){
+									infoWindow.open(map, marker);
+								});
+							}
+						</script>
 					</div>
-
-
+					
+					<script defer async
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly">		
+					</script>
 				</div>
                 <div class="grid mx-5 md:grid-cols-3">
 					<div class="block">
