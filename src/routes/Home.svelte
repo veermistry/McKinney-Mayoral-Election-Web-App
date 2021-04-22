@@ -75,7 +75,10 @@
 
     let registerModal;
 
-    function initMap(){
+	import Map from './Map.svelte'; 
+	export let ready;
+
+    /*function initMap(){
 							var options = {
 								zoom:9,
 								center:{lat:33.1983,lng:-96.6389}
@@ -157,10 +160,30 @@
 								marker.addListener('click', function(){
 									infoWindow.open(map, marker);
 								});
-							}
+							}*/
 
 
 </script>
+
+<svelte:head>
+	<script defer async
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly">
+		
+	</script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+
+		#map{
+			height:400px;
+			width:100%;
+		}
+    </style>
+</svelte:head>
 
 <Modal bind:this={registerModal}/>
 <main>
@@ -205,16 +228,13 @@
 					{/if}
 				</div>
 				<div class="my-10">
-					<div id = "map"></div>
-					<script>
+					<div id = "map">
+					{#if ready}
+						<Map></Map>
+					{/if}
+					</div>
 
-							
-						}
-					</script>
-					<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly"
-					async
-    >				</script>
+
 				</div>
                 <div class="grid mx-5 md:grid-cols-3">
 					<div class="block">
@@ -390,28 +410,13 @@
 
 </main>
 
-<svelte:head>
-	<script defer async
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly">
-		</script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+<style global lang="postcss">
 		@tailwind base;
 		@tailwind components;
 		@tailwind utilities;
 
-		#map{
-			height:400px;
-			width:100%;
-		}
-    </style>
-</svelte:head>
-
-
-<style global lang="postcss">
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+	:global(body) {
+	padding: 0;
+}
 </style>
+
