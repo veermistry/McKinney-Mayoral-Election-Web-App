@@ -36,6 +36,7 @@ import {onMount} from 'svelte';
 		@tailwind components;
 		@tailwind utilities;
     </style>
+
 </svelte:head>
 
 <style global lang="postcss">

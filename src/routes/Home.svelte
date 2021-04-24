@@ -13,8 +13,6 @@
 
 	let val_tax = 20;
 
-	let markerbase = 0;
-
 	import locations from './locations.json';
 	(`running version ${locations.length}`);
 
@@ -75,14 +73,12 @@
 
     let registerModal;
 
-	import Map from './Map.svelte'; 
-
     /*function initMap(){
 							var options = {
 								zoom:9,
 								center:{lat:33.1983,lng:-96.6389}
 							}
-	}
+						}
 
 							var map = new 
 							google.maps.Map(document.getElementById('map'), options);
@@ -216,24 +212,22 @@
 						{#each locations as locationx}
 							{#if getDistanceInMiles(locationx) <= closestDist}
 								{assignVals(locationx)}
-								<!--{console.log(closestDist + " " + closestLocation)}-->
+								{console.log(closestDist + " " + closestLocation)}
 							{/if}
 						{/each}}
-						<p> Your closest location: {closestLocation}. </p>
 					{/if}
 				</div>
 				<div class="my-10">
 					<div id = "map">
 						<script>
 							function initMap(){
-							var options = {
+							   var options = {
 								zoom:9,
 								center:{lat:33.1983,lng:-96.6389}
+								}
 							}
-	}
 
-							var map = new 
-							google.maps.Map(document.getElementById('map'), options);
+							var map = new google.maps.Map(document.getElementById('map'), options);
 
 							addMarker({
 								coords:{lat: 33.346207, lng: -96.547211},
@@ -310,9 +304,7 @@
 							}
 						</script>
 					</div>
-					
-					<script defer async
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap&libraries=&v=weekly">		
+					<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ1Z1ZXwvhBxVWmdzGB22X5gE5VaOOwoM&callback=initMap">		
 					</script>
 				</div>
                 <div class="grid mx-5 md:grid-cols-3">
@@ -493,9 +485,5 @@
 		@tailwind base;
 		@tailwind components;
 		@tailwind utilities;
-
-	:global(body) {
-	padding: 0;
-}
 </style>
 
