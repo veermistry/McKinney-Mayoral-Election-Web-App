@@ -13,6 +13,7 @@
 	// Include our Pages
 	import Home from './resources/views/Home.svelte'
 	import News from './resources/views/News.svelte'
+	import Register from './resources/views/Register.svelte'
 	
 	// Page Router Params
 	let page;
@@ -21,6 +22,7 @@
 	// Set up the pages to watch for
 	router('/', () => {page = Home})
 	router('/news', () => {page = News})
+	router('/register', () => {page = Register})
 
 	// Start the router binding
 	router.start();
