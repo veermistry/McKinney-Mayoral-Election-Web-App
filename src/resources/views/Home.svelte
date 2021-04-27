@@ -289,7 +289,7 @@ import { } from 'node:os';
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
 							<div class="w-full text-gray-700 font-main">Location QuickSearch:</div> 
-							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
+							<div class="w-full leading-tight text-gray-400">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded shadow" bind:value={ZIP}>
 								{#if ZIP.length === 5}
 									{#each locations as location}
@@ -301,12 +301,12 @@ import { } from 'node:os';
 										{/if}
 									{/each}
 									{#if ZIP.length === 5 && !Found}
-										<span class="block p-2">
+										<span class="block p-2 text-orange-400">
 											Sorry. No locations found for the Zip code provided.
 										</span>
 									{/if}
 								{:else}
-								<span class="block p-2">
+								<span class="block p-2 text-orange-400">
 									Zip code is not valid.
 								</span>
 								{/if}
@@ -323,7 +323,7 @@ import { } from 'node:os';
 					</div>
                     <div class="w-full md:w-1/3 p-5">
                         <h1>All Voting Locations & Rooms</h1>
-						<small class="w-full leading-tight text-gray-500">
+						<small class="w-full leading-tight text-gray-400">
 							Click on the name of the location to get directions.
 						</small>
                         <div style="max-height: 250px; overflow-y: scroll;">
@@ -349,7 +349,7 @@ import { } from 'node:os';
         	</div>
             <div class="page-wrapper p-5 flex flex-row flex-wrap">
 
-				<div class="w-full text-2xl mb-3 px-5">Mayoral Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full text-2xl mb-3 px-5">Mayoral Candidates<br><small class="text-gray-400">Click on their names to go to their webpages.</small></div>
 				
 				<div class="w-full md:w-1/2 flex flex-wrap flex-row items-center content-center">
 					<div class="w-full md:w-1/5 p-5">
@@ -399,7 +399,7 @@ import { } from 'node:os';
 					<p class="text-xl">
 						Incumbent Mayor Fuller notable achievements & occurrences:
 					</p>
-					<p class="block text-base"> 
+					<p class="block text-base text-gray-400"> 
 						• 2021 was the first year for McKinney to have no-new-revenue tax rate in recent history.
 						<br> • McKinney recieved a Cultural District Designation from the Texas Commission on the Arts.
 						<br> • McKinney also recieved designation as a 'Texas Music Friendly Community' from the state government.
@@ -415,10 +415,10 @@ import { } from 'node:os';
 				</div>
 				<Slider style="display: none" class="mt-5 mx-6" max={100} bind:val_tax/>-->
 
-				<div class="w-full text-2xl my-3 mb-2 px-5">District 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full text-2xl my-3 mb-2 px-5">District 1 Candidates<br><small class="text-gray-400">Click on their names to go to their webpages.</small></div>
 				<div class="w-full flex flex-wrap flex-row p-2">
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner">
-						<div class="font-bold text-left">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 rounded-md shadow-inner">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Cris-Trevino-for-McKinney-D1-City-Council-109026511061328/?ref=page_internal" target="_blank" class="underline">
 								Cristoval (Cris) Treviño
 							</a>
@@ -432,7 +432,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Moore.Johnny12/" target="_blank" class="underline">
 								Johnny Moore
 							</a>
@@ -446,7 +446,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://votebeller.com/" target="_blank" class="underline">
 								Justin Beller
 							</a>
@@ -461,7 +461,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Stanley Penn
 							</a>
@@ -473,7 +473,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Thomas Tolan
 							</a>
@@ -486,10 +486,10 @@ import { } from 'node:os';
 					</div>
 				</div>
 
-				<div class="w-full text-2xl my-5 mb-2 px-5">District 3 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full text-2xl my-5 mb-2 px-5">District 3 Candidates<br><small class="text-gray-400">Click on their names to go to their webpages.</small></div>
 				<div class="w-full flex flex-wrap flex-row p-2">
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Gere' Feltus
 							</a>
@@ -501,7 +501,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Vicente Torres
 							</a>
@@ -514,10 +514,10 @@ import { } from 'node:os';
 					</div>
 				</div>
 
-				<div class="w-full text-2xl my-5 mb-2 px-5">At Large 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full text-2xl my-5 mb-2 px-5">At Large 1 Candidates<br><small class = "text-gray-400">Click on their names to go to their webpages.</small></div>
 				<div class="w-full flex flex-wrap flex-row p-2">
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Brian J. Magnuson
 							</a>
@@ -529,7 +529,7 @@ import { } from 'node:os';
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
-						<div class="font-bold text-left">
+						<div class="font-bold text-left text-violet-800">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
 								Charlie Philips
 							</a>
