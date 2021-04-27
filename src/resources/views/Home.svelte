@@ -327,7 +327,7 @@ import { } from 'node:os';
 							Click on the name of the location to get directions.
 						</small>
                         <div style="max-height: 250px; overflow-y: scroll;">
-							<table class="table-auto w-full">
+							<table class="table-auto w-full shadow-inner">
 								<thead>
 									<tr>
 										<th class="text-left">Location</th>
@@ -417,7 +417,7 @@ import { } from 'node:os';
 
 				<div class="w-full text-2xl my-3 mb-2 px-5">District 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
 				<div class="w-full flex flex-wrap flex-row p-2">
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner">
 						<div class="font-bold text-left">
 							<a href="https://www.facebook.com/Cris-Trevino-for-McKinney-D1-City-Council-109026511061328/?ref=page_internal" target="_blank" class="underline">
 								Cristoval (Cris) Treviño
