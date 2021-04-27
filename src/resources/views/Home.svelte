@@ -375,7 +375,7 @@ import { } from 'node:os';
 
 				<div class="w-full md:w-1/2 flex flex-wrap flex-row items-center content-center">
 					<div class="w-full md:w-1/5 p-5">
-						<img src="img/Thomas_Meredith.jpeg" alt="Thomas_Meredith" class="rounded-lg">
+						<img src="img/Thomas_Meredith.jpg" alt="Thomas_Meredith" class="rounded-lg">
 					</div>
 					<div class="w-full md:w-4/5 p-5">
 						<span class=" font-bold text-center mx-2" >
