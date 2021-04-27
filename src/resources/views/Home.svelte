@@ -1,9 +1,10 @@
 <script>
 	// import {onMount} from 'svelte';
 	import * as geolib from 'geolib';
-	import Slider from '@fouita/slider';
 	import locations from '../../data/locations.json';
 	import Modal from '../components/modal.svelte';
+	import Nav from '../components/nav.svelte'
+import { } from 'node:os';
 
 	let val_tax = 20;
 	let closestLocation = "";
@@ -12,6 +13,25 @@
 	let showModal = false;
 	let showNearest = false;
 	let ZIP = "";
+	let Found = false;
+
+	const toggle = async (e) => {
+
+		let element = e.currentTarget.parentNode.querySelector('.more')
+		
+		if (element.getAttribute('hidden') !== null) {
+			element.removeAttribute('hidden')
+			element.parentNode.querySelector('button').innerHTML = 'See Less'
+		} else {
+			element.setAttribute('hidden', 'hidden')
+			element.parentNode.querySelector('button').innerHTML = 'Read More'
+		}
+	}
+
+	const setFound = (bool) => {
+		Found = bool
+		return '' // Prevents rendering from the inline call.
+	};
 
 	const getDistanceInMiles = (locationx) => {
         // convert meters to miles
@@ -150,24 +170,8 @@
 
 	<div>
         <div>
-            <nav class="w-full flex flex-row flex-wrap bg-white absolute sticky top-0 border-b-2 border-gray-100">
-                <div class="w-1/2 md:w-1/3 lg:w-1/5">
-                    <h1 class="font-main p-4 text-black bg-gray-50">
-                        <a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
-                    </h1>
-                </div>
-				<ul class="flex content-center items-center justify-end px-10 w-1/2 md:w-2/3 lg:w-4/5">
-                    <li class="text-gray-400 font-main uppercase px-5">
-                        <a href="/" class="font-main text-base text-gray-800 hover:text-gray-700 pointer-cursor">Home</a>
-                    </li>
-                    <li class="text-gray-400 font-main uppercase px-5">
-                        <a href="/news" class="font-main text-base text-gray-800 hover:text-gray-700 pointer-cursor">News</a>
-                    </li>
-					<li id = "Register" class="text-gray-400 font-main uppercase px-5">
-						<button on:click={registerModal.show} class="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 text-base font-main">Register</button>
-                    </li>
-                </ul>
-			</nav>
+            
+			<Nav/>
 
 			<div class="page-wrapper">
 				<div style="display: none" class="flex justify-center">
@@ -283,12 +287,40 @@
 				</div>
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
-                        <div class="w-full"><div class="w-full text-gray-700 font-main">Location QuickSearch:</div> <div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> <input type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded shadow">  <h2 class="mt-3 w-full text-black font-bold text-lg">What Election?</h2> <div class="w-full justify-center items-center">On May 1st, 2021, voters in McKinney will elect representatives for these positions in City Council:
-							<ul class="mt-3"><li>Mayor</li> 
-								<li>District 1</li> 
-								<li>District 3</li> 
-								<li>At Large 1</li></ul></div></div>
-                    </div>
+                        <div class="w-full">
+							<div class="w-full text-gray-700 font-main">Location QuickSearch:</div> 
+							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
+							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded shadow" bind:value={ZIP}>
+								{#if ZIP.length === 5}
+									{#each locations as location}
+										{#if ZIP == location.Zip}
+											<span class="block p-2">
+												<a href={location.MapsLink} target="_blank">Location: <u>{location.Name}, {location.Room}</u></a>
+											</span>
+											{ setFound(true) }
+										{/if}
+									{/each}
+									{#if ZIP.length === 5 && !Found}
+										<span class="block p-2">
+											Sorry. No locations found for the Zip code provided.
+										</span>
+									{/if}
+								{:else}
+								<span class="block p-2">
+									Zip code is not valid.
+								</span>
+								{/if}
+							<h2 class="mt-3 w-full text-black font-bold text-lg">What Election?</h2> 
+							<div class="w-full justify-center items-center">On May 1st, 2021, voters in McKinney will elect representatives for these positions in City Council:
+								<ul class="mt-3">
+									<li>Mayor</li> 
+									<li>District 1</li> 
+									<li>District 3</li> 
+									<li>At Large 1</li>
+								</ul>
+							</div>
+						</div>
+					</div>
                     <div class="w-full md:w-1/3 p-5">
                         <h1>All Voting Locations & Rooms</h1>
 						<small class="w-full leading-tight text-gray-500">
@@ -383,64 +415,133 @@
 				</div>
 				<Slider style="display: none" class="mt-5 mx-6" max={100} bind:val_tax/>-->
 
-				<div class="w-full text-2xl mb-3 px-5">District 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
-				<div class="grid grid-rows-3 grid-cols-2 gap-5 px-2">
-					<div class="p-3">
-						<span class=" font-bold text-center" ><a href="https://www.facebook.com/Cris-Trevino-for-McKinney-D1-City-Council-109026511061328/?ref=page_internal" target="_blank" class="underline">Cristoval (Cris) Treviño</a></span>
-							<span class="block leading-tight">Cris Treviño is a born-and-raised McKinney citizen who has worked in law enforcement for the past 19 years. 
-								He grew up in District 1, and has been involved in the community for years. 
-								Cris looks to add a Neighborhood Walmart & pharmacy, more banking services, a mini postal location, and create shuttles to McKinney medical services.
-								Cris also plans on creating a District 1 business assocation, for business owners in the district to discuss issues and work towards mutual success.
-							</span>
+				<div class="w-full text-2xl my-3 mb-2 px-5">District 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full flex flex-wrap flex-row p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Cris-Trevino-for-McKinney-D1-City-Council-109026511061328/?ref=page_internal" target="_blank" class="underline">
+								Cristoval (Cris) Treviño
+							</a>
+						</div>
+						Cris Treviño is a born-and-raised McKinney citizen who has worked in law enforcement for the past 19 years. 
+						He grew up in District 1, and has been involved in the community for years...
+						<span class="more" hidden="hidden">
+							Cris looks to add a Neighborhood Walmart & pharmacy, more banking services, a mini postal location, and create shuttles to McKinney medical services.
+							Cris also plans on creating a District 1 business assocation, for business owners in the district to discuss issues and work towards mutual success.
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center"><a href="https://www.facebook.com/Moore.Johnny12/" target="_blank" class="underline">Johnny Moore</a></span>
-							<span class="block leading-tight">Johnny Moore is a high school counselor and has coached high school football & track for 13 years. 
-								Johnny prioritizes the future leaders of McKinney, as looks to work in collaboration with Collin College to subsidize tuition costs.
-								Johnny is married and has a daughter who have lived in McKinney for many years.
-							</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Moore.Johnny12/" target="_blank" class="underline">
+								Johnny Moore
+							</a>
+						</div>
+						Johnny Moore is a high school counselor and has coached high school football & track for 13 years. 
+						Johnny prioritizes the future leaders of McKinney, as looks to work in collaboration with...
+						<span class="more m-0" hidden="hidden">
+							Collin College to subsidize tuition costs.
+							Johnny is married and has a daughter who have lived in McKinney for many years.
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center"><a href="https://votebeller.com/" target="_blank" class="underline">Justin Beller</a></span>
-							<span class="block leading-tight">Justin Beller is a community banker and active citizen & participant in the community.
-								He is and has been involved in many community organizations, serving on the board of the Holy Family School in 2011, and was appointed by the city government to serve on the McKinney Housing Authority Board for 6 years, redeveloping Newsome and Merritt homes.
-								During his membership on the housing board, Justin started a group for young men called McKinney Force, building relationships & community with District 1 residents, with an emphasis on civic duty and empowerment. 
-								Justin has also served on the Chamber of Commerce Board, and was recognized as the leadership alumni of the year. 
-							</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://votebeller.com/" target="_blank" class="underline">
+								Justin Beller
+							</a>
+						</div>
+						Justin Beller is a community banker and active citizen & participant in the community.
+						He is and has been involved in many community organizations, serving on the board of the Holy Family School in 2011...
+						<span class="more m-0" hidden="hidden">
+							, and was appointed by the city government to serve on the McKinney Housing Authority Board for 6 years, redeveloping Newsome and Merritt homes.
+							During his membership on the housing board, Justin started a group for young men called McKinney Force, building relationships & community with District 1 residents, with an emphasis on civic duty and empowerment. 
+							Justin has also served on the Chamber of Commerce Board, and was recognized as the leadership alumni of the year. 
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center"><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Stanley Penn</a></span>
-							<span class="block leading-tight mx-3">George info</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Stanley Penn
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							Some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center"><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Thomas Tolan</a></span>
-							<span class="block leading-tight mx-3">George info</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Thomas Tolan
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
 
-				<div class="w-full text-2xl mb-3 px-5">District 3 Candidates<br><small>Click on their names to go to their webpages.</small></div>
-				<div class="grid grid-rows-3 grid-cols-2 gap-5 px-2">
-					<div class="p-3">
-						<span class=" font-bold text-center mx-2" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Gere' Feltus</a></span>
-						<span class="block leading-tight mx-3">George info</span>
+				<div class="w-full text-2xl my-5 mb-2 px-5">District 3 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full flex flex-wrap flex-row p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Gere' Feltus
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							Some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center mx-2" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Vicente Torres</a></span>
-						<span class="block  leading-tight mx-3">George info</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Vicente Torres
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
 
-				<div class="w-full text-2xl mb-3 px-5">District 3 Candidates<br><small>Click on their names to go to their webpages.</small></div>
-				<div class="grid grid-rows-3 grid-cols-2 gap-5 px-2">
-					<div class="p-3">
-						<span class=" font-bold text-center mx-2" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Brian J. Magnuson</a></span>
-						<span class="block leading-tight mx-3">George info</span>
+				<div class="w-full text-2xl my-5 mb-2 px-5">At Large 1 Candidates<br><small>Click on their names to go to their webpages.</small></div>
+				<div class="w-full flex flex-wrap flex-row p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Brian J. Magnuson
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							Some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="p-3">
-						<span class=" font-bold text-center mx-2" ><a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">Charlie Philips</a></span>
-						<span class="block l eading-tight mx-3">George info</span>
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+						<div class="font-bold text-left">
+							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline">
+								Charlie Philips
+							</a>
+						</div>
+						Some placeholder content...
+						<span class="more m-0" hidden="hidden">
+							some hidden placeholder content
+						</span>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
