@@ -272,7 +272,7 @@ import { } from 'node:os';
 						</div>
 					</div>
 				</div>
-				<div class="justify-center">
+				<div style="display: none" class="justify-center">
 					<!-- style="display: none" -->
 					<button on:click={triggerNearest}>
 						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
