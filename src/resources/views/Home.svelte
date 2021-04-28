@@ -429,7 +429,7 @@ import { } from 'node:os';
 							Cris looks to add a Neighborhood Walmart & pharmacy, more banking services, a mini postal location, and create shuttles to McKinney medical services.
 							Cris also plans on creating a District 1 business assocation, for business owners in the district to discuss issues and work towards mutual success.
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
@@ -443,9 +443,9 @@ import { } from 'node:os';
 							Collin College to subsidize tuition costs.
 							Johnny is married and has a daughter who have lived in McKinney for many years.
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner rounded-md">
 						<div class="font-bold text-left">
 							<a href="https://votebeller.com/" target="_blank" class="underline text-purple-800">
 								Justin Beller
@@ -458,7 +458,7 @@ import { } from 'node:os';
 							During his membership on the housing board, Justin started a group for young men called McKinney Force, building relationships & community with District 1 residents, with an emphasis on civic duty and empowerment. 
 							Justin has also served on the Chamber of Commerce Board, and was recognized as the leadership alumni of the year. 
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
@@ -472,7 +472,7 @@ import { } from 'node:os';
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner rounded-md">
 						<div class="font-bold text-left">
 							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
 								Thomas Tolan
@@ -482,7 +482,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
 
@@ -498,7 +498,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							Some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
@@ -510,7 +510,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
 
@@ -526,7 +526,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							Some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
@@ -538,7 +538,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 				</div>
 
