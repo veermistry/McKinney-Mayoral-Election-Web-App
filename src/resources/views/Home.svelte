@@ -320,7 +320,10 @@ import { } from 'node:os';
 								</ul>
 								<br> As is the case every year, the main issues of the election consist of taxes & city planning, due to the consistent growth in population that McKinney has had.
 								<br>
-								<br> 
+								<br> However, the state of Texas itself has experienced quite a unique year, not only due to COVID-19, but also because of the ice storm Texas had faced in February of this year. 
+								Thus, the support of small business will be an elemental issue of this election, as they recover from the pandemic this year as well as expenses from the storm.
+								<br>
+								<br> As the city continues to discuss more of development on the east side of McKinney, the residents have asked for a say in the development. Thus, as District 1 encompasses much of the area, the question of whether their voices will be heard has an important role in the race, as well as the rest of the general election as well.
 							</div>
 						</div>
 					</div>
