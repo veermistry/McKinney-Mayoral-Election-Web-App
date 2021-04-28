@@ -4,7 +4,7 @@
             <a href="/" class="text-md sm:text-xl">McKinney 2021 General Election</a>
         </h1>
     </div>
-    <ul class="flex content-center items-center justify-center md:justify-end px-10 w-1/2 md:w-2/3 lg:w-4/5">
+    <ul class="flex content-center items-center justify-end px-10 w-1/2 md:w-2/3 lg:w-4/5">
         <li class="text-gray-400 font-main uppercase px-5">
             <a href="/" class="font-main text-base text-gray-800 hover:text-gray-700 pointer-cursor">Home</a>
         </li>
