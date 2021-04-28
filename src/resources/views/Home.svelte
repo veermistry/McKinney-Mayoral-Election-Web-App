@@ -174,20 +174,6 @@ import { } from 'node:os';
 			<Nav/>
 
 			<div class="page-wrapper">
-				<div class="flex justify-center">
-					<!-- style="display: none" -->
-					<button on:click={triggerNearest}>
-						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
-					</button>
-					{#if showNearest}
-						{#each locations as locationx}
-							{#if getDistanceInMiles(locationx) <= closestDist}
-								{assignVals(locationx)}
-								{console.log(closestDist + " " + closestLocation)}
-							{/if}
-						{/each}}
-					{/if}
-				</div>
 				<div style="display: none" class="my-10">
 					<div id = "map">
 						<script>
@@ -286,8 +272,19 @@ import { } from 'node:os';
 						</div>
 					</div>
 				</div>
-				<div class="">
-
+				<div class="flex justify-center">
+					<!-- style="display: none" -->
+					<button on:click={triggerNearest}>
+						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
+					</button>
+					{#if showNearest}
+						{#each locations as locationx}
+							{#if getDistanceInMiles(locationx) <= closestDist}
+								{assignVals(locationx)}
+								{console.log(closestDist + " " + closestLocation)}
+							{/if}
+						{/each}}
+					{/if}
 				</div>
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
