@@ -41,7 +41,7 @@ import { } from 'node:os';
             {latitude: location.latitude, longitude: location.longitude }
         )).toFixed(1);
     };
-	onMount( async () => {
+	/*onMount( async () => {
         // attempt to get user's geolocation, otherwise use the default for McKinney
         navigator.geolocation.getCurrentPosition(
             (position) => {
@@ -53,7 +53,7 @@ import { } from 'node:os';
         );
 
         alert( `You are ${getDistanceInMiles()} miles away from the 1st voting location` );
-    });
+    });*/
 
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
