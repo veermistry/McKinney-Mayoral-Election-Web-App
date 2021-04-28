@@ -1,14 +1,14 @@
 <script>
-	// import {onMount} from 'svelte';
+	import {onMount} from 'svelte';
 	import * as geolib from 'geolib';
 	import locations from '../../data/locations.json';
 	import Modal from '../components/modal.svelte';
 	import Nav from '../components/nav.svelte'
-import { } from 'node:os';
+	import { } from 'node:os';
 
 	let val_tax = 20;
-	let closestLocation = "";
-	let location = { latitude: 33.20484, longitude: -96.67274};
+  $: closestLocation = locations[2];
+  let currentPosition = { latitude: 40.20484, longitude: -96.67274 };
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
@@ -33,42 +33,41 @@ import { } from 'node:os';
 		return '' // Prevents rendering from the inline call.
 	};
 
-	const getDistanceInMiles = (locationX) => {
-        // convert meters to miles
-		console.log(locationX.Latitude + " " + locationX.Longitude)
-        return (0.000621371192 * geolib.getDistance(
-            { latitude: locationX.Latitude, longitude: locationX.Longitude},
-            {latitude: location.latitude, longitude: location.longitude }
-        )).toFixed(1);
-    };
-	/*onMount( async () => {
-        // attempt to get user's geolocation, otherwise use the default for McKinney
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                location = position.coords
-            },
-            () => {
-                console('Position could not be determined -- use McKinney center coordinates instead')
-            }
-        );
+  function getDistanceInMiles(targetPosition) {
+    // calculate distance and convert to miles
+    var distanceInMeters = geolib.getDistance(targetPosition, currentPosition);
+    var distanceInMiles = distanceInMeters * 0.000621371192;
+    return distanceInMiles.toFixed(1);
+  };
 
-        alert( `You are ${getDistanceInMiles()} miles away from the 1st voting location` );
-    });*/
+  function onLoadCurrentPosition(pos) {
+    currentPosition = pos.coords;
+    closestLocation = getClosestLocation();
+  }
 
+  function onErrorLoadingCurrentPosition(err) {
+    console.warn("Position could not be determined -- will use McKinney center coordinates instead");
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+  }
+
+  function getClosestLocation() {
+    let closestLocation = locations[0]
+    let shortestDistance = 100000000000000000000000
+    for(let i = 0; i < locations.length; ++i) {
+        let distance = getDistanceInMiles(locations[i])
+        if(distance < shortestDistance) {
+            shortestDistance = distance
+            closestLocation = locations[i]
+        }
+    }
+    return closestLocation
+  }
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
 
-	const toggleModal = () => {
-		showModal =  !showModal;
-	}
 
-	const findDistance = () => {
-		geolib.getDistance(
-    		{ latitude: location.Latitude, longitude: location.Longitude },
-    		{ latitude: coords.latitude, longitude: coords.longitude }
-		);
-	}
+
 
 	const assignVals = (locationx) => {
 		closestLocation = locationx.Name;
@@ -76,6 +75,10 @@ import { } from 'node:os';
 	}
 
     let registerModal;
+
+  onMount(async () => {
+    navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+  });
 
     /*function initMap(){
 							var options = {
@@ -289,7 +292,7 @@ import { } from 'node:os';
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
-							<div class="w-full text-gray-700 font-main">Location QuickSearch:</div> 
+							<div class="w-full text-gray-700 font-main">{closestLocation.Room}  *** Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none md:shadow" bind:value={ZIP}>
 								{#if ZIP.length === 5}
