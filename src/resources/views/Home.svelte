@@ -290,7 +290,7 @@ import { } from 'node:os';
                         <div class="w-full">
 							<div class="w-full text-gray-700 font-main">Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
-							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded shadow-md" bind:value={ZIP}>
+							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none shadow" bind:value={ZIP}>
 								{#if ZIP.length === 5}
 									{#each locations as location}
 										{#if ZIP == location.Zip}
