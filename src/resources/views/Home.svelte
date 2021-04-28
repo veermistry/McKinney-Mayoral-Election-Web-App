@@ -41,7 +41,7 @@ import { } from 'node:os';
             {latitude: location.latitude, longitude: location.longitude }
         )).toFixed(1);
     };
-	/*onMount( async () => {
+	onMount( async () => {
         // attempt to get user's geolocation, otherwise use the default for McKinney
         navigator.geolocation.getCurrentPosition(
             (position) => {
@@ -53,7 +53,7 @@ import { } from 'node:os';
         );
 
         alert( `You are ${getDistanceInMiles()} miles away from the 1st voting location` );
-    });*/
+    });
 
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
@@ -174,7 +174,8 @@ import { } from 'node:os';
 			<Nav/>
 
 			<div class="page-wrapper">
-				<div style="display: none" class="flex justify-center">
+				<div class="flex justify-center">
+					<!-- style="display: none" -->
 					<button on:click={triggerNearest}>
 						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
 					</button>
@@ -285,6 +286,9 @@ import { } from 'node:os';
 						</div>
 					</div>
 				</div>
+				<div class="">
+
+				</div>
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
@@ -323,7 +327,7 @@ import { } from 'node:os';
 								<br> However, the state of Texas itself has experienced quite a unique year, not only due to COVID-19, but also because of the ice storm Texas had faced in February of this year. 
 								Thus, the support of small business will be an elemental issue of this election, as they recover from the pandemic this year as well as expenses from the storm.
 								<br>
-								<br> As the city continues to discuss more of development on the east side of McKinney, the residents have asked for a say in the development. Thus, as District 1 encompasses much of the area, the question of whether their voices will be heard has an important role in the race, as well as the rest of the general election as well.
+								<br> As the city continues to discuss more of development on the east side of McKinney, the residents have asked for a say in the development. Thus, as District 1 encompasses much of the area, the question of whether their voices will be heard has an important role in the district's race, and in the rest of the general election as well.
 							</div>
 						</div>
 					</div>
