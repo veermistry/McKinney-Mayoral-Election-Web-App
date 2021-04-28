@@ -280,10 +280,11 @@ import { } from 'node:os';
 					{#if showNearest}
 						{#each locations as locationx}
 							{#if getDistanceInMiles(locationx) <= closestDist}
-								{assignVals(locationx)}
-								{console.log(closestDist + " " + closestLocation)}
+								assignVals(locationx)
+								console.log(closestDist + " " + closestLocation)
 							{/if}
 						{/each}}
+						<p> </p>
 					{/if}
 				</div>
                 <div class="flex flex-wrap flex-row p-5">
