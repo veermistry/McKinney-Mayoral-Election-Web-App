@@ -11,7 +11,7 @@
 
 
 	// Include our Pages
-	import Home from './resources/views/Home2.svelte'
+	import Home from './resources/views/Home.svelte'
 	import News from './resources/views/News.svelte'
 	import Register from './resources/views/Register.svelte'
 	
