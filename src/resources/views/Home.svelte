@@ -295,7 +295,7 @@ import { } from 'node:os';
 									{#each locations as location}
 										{#if ZIP == location.Zip}
 											<span class="block p-2">
-												<a href={location.MapsLink} target="_blank">Location: <u>{location.Name}, {location.Room}</u></a>
+												<a href={location.MapsLink} target="_blank">Location: <u class = "text-purple-800">{location.Name}, {location.Room}</u></a>
 											</span>
 											{ setFound(true) }
 										{/if}
@@ -318,12 +318,15 @@ import { } from 'node:os';
 									<li>District 3</li> 
 									<li>At Large 1</li>
 								</ul>
+								<br> As is the case every year, the main issues of the election consist of taxes & city planning, due to the consistent growth in population that McKinney has had.
+								<br>
+								<br> 
 							</div>
 						</div>
 					</div>
                     <div class="w-full md:w-1/3 p-5">
                         <h1>All Voting Locations & Rooms</h1>
-						<small class="w-full leading-tight text-gray-400">
+						<small class="w-full leading-tight text-gray-500">
 							Click on the name of the location to get directions.
 						</small>
                         <div style="max-height: 250px; overflow-y: scroll;">
