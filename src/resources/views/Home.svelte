@@ -33,15 +33,15 @@ import { } from 'node:os';
 		return '' // Prevents rendering from the inline call.
 	};
 
-	const getDistanceInMiles = (locationx) => {
+	const getDistanceInMiles = (locationX) => {
         // convert meters to miles
-		console.log(locationx.Latitude + " " + locationx.Longitude)
+		console.log(locationX.Latitude + " " + locationX.Longitude)
         return (0.000621371192 * geolib.getDistance(
-            { latitude: locationx.Latitude, longitude: locationx.Longitude},
+            { latitude: locationX.Latitude, longitude: locationX.Longitude},
             {latitude: location.latitude, longitude: location.longitude }
         )).toFixed(1);
     };
-	/*onMount( async () => {
+	onMount( async () => {
         // attempt to get user's geolocation, otherwise use the default for McKinney
         navigator.geolocation.getCurrentPosition(
             (position) => {
@@ -53,7 +53,7 @@ import { } from 'node:os';
         );
 
         alert( `You are ${getDistanceInMiles()} miles away from the 1st voting location` );
-    });*/
+    });
 
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
