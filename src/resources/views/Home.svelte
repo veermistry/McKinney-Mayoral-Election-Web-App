@@ -301,7 +301,7 @@ import { } from 'node:os';
 										{/if}
 									{/each}
 									{#if ZIP.length === 5 && !Found}
-										<span class="block p-2 text-orange-400">
+										<span class="block p-2 text-red-300">
 											Sorry. No locations found for the Zip code provided.
 										</span>
 									{/if}
