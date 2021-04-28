@@ -306,7 +306,7 @@ import { } from 'node:os';
 										</span>
 									{/if}
 								{:else}
-								<span class="block p-2 text-orange-400">
+								<span class="block p-2 text-red-300">
 									Zip code is not valid.
 								</span>
 								{/if}
