@@ -280,8 +280,8 @@ import { } from 'node:os';
 				<div class="w-full bg-cover bg-center" style="height:32rem; background-image: url('https://cirrusaircraft.com/wp-content/uploads/2021/04/stories-mckinney.jpg');">
 					<div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
 						<div class="text-center">
-							<h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">McKinney General <span class="underline text-blue-400">Electios</span></h1>
-							<button class="mt-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Register</button>
+							<h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">McKinney General <span class="underline text-blue-400">Election</span></h1>
+							<button class="mt-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"><a href = "/register">Register</a></button>
 						</div>
 					</div>
 				</div>
@@ -302,12 +302,12 @@ import { } from 'node:os';
 									{/each}
 									{#if ZIP.length === 5 && !Found}
 										<span class="block p-2 text-red-300">
-											Sorry. No locations found for the Zip code provided.
+											Sorry. No locations found for the ZIP code provided.
 										</span>
 									{/if}
 								{:else}
 								<span class="block p-2 text-red-300">
-									Zip code is not valid.
+									ZIP code is not valid.
 								</span>
 								{/if}
 							<h2 class="mt-3 w-full text-black font-bold text-lg">What Election?</h2> 
@@ -357,7 +357,7 @@ import { } from 'node:os';
 					</div>
 					<div class="w-full md:w-4/5 p-5">
 						<span class=" font-bold text-center mx-2" >
-							<a href="https://www.mckinneytexas.org/1167/Council-Members#Biographies" target="_blank" class="underline">George Fuller</a>
+							<a href="https://www.mckinneytexas.org/1167/Council-Members#Biographies" target="_blank" class="underline text-purple-800">George Fuller</a>
 						</span>
 						<span class="block leading-tight mx-3">
 							George Fuller is the current mayor of McKinney and was elected in May 2017. 
@@ -379,7 +379,7 @@ import { } from 'node:os';
 					</div>
 					<div class="w-full md:w-4/5 p-5">
 						<span class=" font-bold text-center mx-2" >
-							<a href="https://www.facebook.com/Meredith-For-McKinney-104874304725724" target="_blank" class="underline">Thomas Meredith</a>
+							<a href="https://www.facebook.com/Meredith-For-McKinney-104874304725724" target="_blank" class="underline text-purple-800">Thomas Meredith</a>
 						</span>
 						<span class="block leading-tight mx-3">
 							Thomas Meredith is a small business owner and active citizen & participant in local politics. 
