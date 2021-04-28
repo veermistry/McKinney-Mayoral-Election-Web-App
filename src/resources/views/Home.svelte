@@ -470,7 +470,7 @@ import { } from 'node:os';
 						<span class="more m-0" hidden="hidden">
 							Some hidden placeholder content
 						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left" on:click="{toggle}">Read More</button>
+						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner rounded-md">
 						<div class="font-bold text-left">
