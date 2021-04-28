@@ -4,10 +4,10 @@
 <main>
     <Nav/>
 
-    <div class="page-wrapper px-5 pt-10">
-        <h1>Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
-        <b>Are you eligible to vote?</b>
-        <span>You are eligible if:</span>
+    <div class="page-wrapper px-5 pt-10 flex-col justify-center">
+        <h1 class="text-center">Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
+        <b class="text-center" >Are you eligible to vote?</b>
+        <span class="text-center block">You are eligible if:</span>
         <ul class="list-disc px-5 pt-2">
             <li>You are a United States citizen</li>
             <li>You are a resident of the county where you submit the application</li>
@@ -15,7 +15,7 @@
             <li>You are not a convicted felon (you may be eligible to vote if you have completed your sentence, probation, and parole); and</li>
             <li>You have not been declared by a court exercising probate jurisdiction to be either totally mentally incapacitated or partially mentally incapacitated without the right to vote</li>
         </ul>
-        <small>Information obtained and verified via <a href="https://www.votetexas.gov/register/index.html">https://www.votetexas.gov/register/index.html</a>
+        <small>Information obtained and verified via <a href="https://www.votetexas.gov/register/index.html" class = "underline">https://www.votetexas.gov/register/index.html</a>
     </div>
 </main>
 
