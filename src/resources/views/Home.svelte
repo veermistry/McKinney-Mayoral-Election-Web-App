@@ -41,7 +41,7 @@ import { } from 'node:os';
             {latitude: location.latitude, longitude: location.longitude }
         )).toFixed(1);
     };
-	onMount( async () => {
+	/*onMount( async () => {
         // attempt to get user's geolocation, otherwise use the default for McKinney
         navigator.geolocation.getCurrentPosition(
             (position) => {
@@ -53,7 +53,7 @@ import { } from 'node:os';
         );
 
         alert( `You are ${getDistanceInMiles()} miles away from the 1st voting location` );
-    });
+    });*/
 
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
@@ -272,8 +272,7 @@ import { } from 'node:os';
 						</div>
 					</div>
 				</div>
-				<div style="display: none" class="justify-center">
-					<!-- style="display: none" -->
+				<!--div style="display: none" class="justify-center">
 					<button on:click={triggerNearest}>
 						<span class="text-base font-main border-b border-blue-900 sm: text">FIND LOCATION</span>
 					</button>
@@ -286,7 +285,7 @@ import { } from 'node:os';
 						{/each}}
 						<p> </p>
 					{/if}
-				</div>
+				</div-->
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
