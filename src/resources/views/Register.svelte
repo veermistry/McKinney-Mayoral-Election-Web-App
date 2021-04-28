@@ -5,7 +5,7 @@
     <Nav/>
 
     <div class="page-wrapper px-5 pt-10">
-        <h1>Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
+        <h1 class="flex justify-center">Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
         <b>Are you eligible to vote?</b>
         <span>You are eligible if:</span>
         <ul class="list-disc px-5 pt-2">
