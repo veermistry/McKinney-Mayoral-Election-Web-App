@@ -8,7 +8,7 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 33.203468, longitude: -96.672491};
+  let currentPosition = { latitude: 0.0000, longitude: 0.0000};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
@@ -349,10 +349,12 @@
 								</thead>
 								<tbody>
 									{#each locations as location}
+										{#if location.Latitude > 1}
 										<tr>
 											<td class="p-3 border border-color-gray-500 underline"><a href={location.MapsLink}>{location.Name}</a></td>
 											<td class="p-3 border border-color-gray-500">{location.Room}</td>
 										</tr>
+										{/if}
 									{/each}
 								</tbody>
 							</table>
