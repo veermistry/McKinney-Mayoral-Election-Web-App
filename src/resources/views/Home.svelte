@@ -7,9 +7,9 @@
 	import { } from 'node:os';
 
 	let val_tax = 20;
-  $: closestLocation = locations[0];
-  let currentPosition = { latitude: 33.203546, longitude: -96.672249};
-	let closestDist = 10000000000000000000000;
+  $: closestLocation = locations[2];
+  let currentPosition = { latitude: 40.20484, longitude: -96.67274 };
+	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
 	let ZIP = "";
@@ -49,10 +49,22 @@
     console.warn("Position could not be determined -- will use McKinney center coordinates instead");
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
-
   function getClosestLocation() {
     let closestLocation = locations[0]
-    let shortestDistance = 100000000000000000
+    let shortestDistance = 100000000000000000000000
+    for(let i = 0; i < locations.length; ++i) {
+        let distance = getDistanceInMiles(locations[i])
+        if(distance < shortestDistance) {
+            shortestDistance = distance
+            closestLocation = locations[i]
+        }
+    }
+    return closestLocation
+  }
+
+  /*function getClosestLocation() {
+    let closestLocation = locations[0]
+    let shortestDistance = 100000000000000
 	console.log({currentPosition})
     for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(currentPosition,
@@ -63,7 +75,7 @@
         }
     }
     return closestLocation
-  }
+  }*/
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
