@@ -53,7 +53,7 @@
   function getClosestLocation() {
     let closestLocation = locations[0]
     let shortestDistance = 10000000000000000000000000000000000000
-    for(let i = 1; i < locations.length; i++) {
+    for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(currentPosition,
 		{latitude: locations[i].Latitude, longitude: locations[i].Longitude})
         if(distance < shortestDistance) {
