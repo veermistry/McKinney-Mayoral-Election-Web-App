@@ -429,7 +429,7 @@
 
 				<div class="w-full text-2xl my-3 mb-2 px-5">District 1 Candidates<br><small class="text-gray-500">Click on their names to go to their webpages.</small></div>
 				<div class="w-full flex flex-wrap flex-row p-2">
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2 rounded-md shadow-inner">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 mx-3">
 						<div class="font-bold text-left">
 							<a href="https://www.facebook.com/Cris-Trevino-for-McKinney-D1-City-Council-109026511061328/?ref=page_internal" target="_blank" class="underline text-purple-800">
 								Cristoval (Cris) Treviño
@@ -443,7 +443,7 @@
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 mx-3">
 						<div class="font-bold text-left">
 							<a href="https://www.facebook.com/Moore.Johnny12/" target="_blank" class="underline text-purple-800">
 								Johnny Moore
@@ -457,7 +457,7 @@
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner rounded-md">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 mx-3">
 						<div class="font-bold text-left">
 							<a href="https://votebeller.com/" target="_blank" class="underline text-purple-800">
 								Justin Beller
@@ -472,7 +472,7 @@
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
+					<div class="w-full md:w-1/2 lg:w-1/5 p-2 mx-3">
 						<div class="font-bold text-left">
 							<a href="https://www.pennformckinney.org" target="_blank" class="underline text-purple-800">
 								Stanley Penn
