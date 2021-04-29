@@ -1,7 +1,35 @@
 [
     {
-        "ID": 1,
-        "Type": "Both",
+        "Name": "Aldridge Elementary School",
+        "Room": "Gym",
+        "Street Address": "720 Pleasant Valley Lane",
+        "City": "Richardson",
+        "State": "TX",
+        "Zip": "75080",
+        "Latitude": "32.99578",
+        "Longitude": "-96.72991",
+        "MapsLink": "https://www.google.com/maps/place/720+Pleasant+Valley+Ln,+Richardson,+TX+75080/@32.9948098,-96.7386481,15z/data=!3m1!4b1!4m5!3m4!1s0x864c18b65dddced5:0x1811380c08d09610!8m2!3d32.9948101!4d-96.7299148"
+    }, {
+        "Name": "Allen ISD Service Center",
+        "Room": "Lobby",
+        "Street Address": "1451 N. Watters Road",
+        "City": "Allen",
+        "State": "TX",
+        "Zip": "75013",
+        "Latitude": "33.12234",
+        "Longitude": "-96.68194",
+        "MapsLink": "https://www.google.com/maps/place/1451+North+Watters+Road,+Allen,+TX+75013/@33.1217694,-96.6907565,15z/data=!3m1!4b1!4m5!3m4!1s0x864c172103f661b3:0x9bdec10f1be3e374!8m2!3d33.1217697!4d-96.6820232"
+    }, {
+        "Name": "Allen Municipal Courts Facility",
+        "Room": "Community Room",
+        "Street Address": "301 Century Parkway",
+        "City": "Allen",
+        "State": "TX",
+        "Zip": "75013",
+        "Latitude": "33.10144",
+        "Longitude": "-96.67413",
+        "MapsLink": "https://www.google.com/maps/place/301+Century+Pkwy,+Allen,+TX+75013/@33.1012934,-96.6826527,15z/data=!3m1!4b1!4m5!3m4!1s0x864c174872e732d1:0xface2261b2ab3854!8m2!3d33.1012937!4d-96.6739194"
+    }, {
         "Name": "Anna ISD Administration Building",
         "Room": "Board Conference Room",
         "Street Address": "201 E 7th Street",
@@ -12,20 +40,56 @@
         "Longitude": "-96.547211",
         "MapsLink": "https://www.google.com/maps/place/201+E+7th+St,+Anna,+TX+75409/@33.3459207,-96.549416,17z/data=!3m1!4b1!4m5!3m4!1s0x864c722569d27345:0x9946be998630d896!8m2!3d33.3459207!4d-96.5472327"
     }, {
-        "ID": 2,
-        "Type": "Election Day",
-        "Name": "Blue Ridge ISD Administration",
-        "Room": "Board Room",
-        "Street Address": "318 West School Street",
-        "City": "Blue Ridge",
+        "Name": "Armstrong Middle School",
+        "Room": "Small Gym",
+        "Street Address": "3805 Timberline Drive",
+        "City": "Plano",
         "State": "TX",
-        "Zip": "75424",
-        "Latitude": "33.30546",
-        "Longitude": "-96.40425",
-        "MapsLink": "https://www.google.com/maps/place/318+School+St,+Blue+Ridge,+TX+75424/@33.3053024,-96.4063836,17z/data=!3m1!4b1!4m5!3m4!1s0x864b8a9ceee18afd:0x53b8470d2bc7a6ca!8m2!3d33.3053024!4d-96.4042003"
+        "Zip": "75074",
+        "Latitude": "33.02214",
+        "Longitude": "-96.65960",
+        "MapsLink": "https://www.google.com/maps/place/3805+Timberline+Dr,+Plano,+TX+75074/@33.0214543,-96.6680351,15z/data=!3m1!4b1!4m5!3m4!1s0x864c1bd96fd312c1:0x18486b2d8c8bfec4!8m2!3d33.0214546!4d-96.6593018"
     }, {
-        "ID": 3,
-        "Type": "Both",
+        "Name": "Bennett Elementary School",
+        "Room": "B105",
+        "Street Address": "7760 Coronado Drive",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.18610",
+        "Longitude": "-96.71740",
+        "MapsLink": "https://www.google.com/maps/place/7760+Coronado+Dr,+McKinney,+TX+75070/@33.1857359,-96.7257732,15z/data=!3m1!4b1!4m5!3m4!1s0x864c15c89ffdf847:0xafbf7d4817ff9e2c!8m2!3d33.1857362!4d-96.7170399"
+    }, {
+        "Name": "Bethany Elementary School",
+        "Room": "Gym",
+        "Street Address": "2418 Micarta Drive",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75025",
+        "Latitude": "33.08059",
+        "Longitude": "-96.74350",
+        "MapsLink": "https://www.google.com/maps/place/2418+Micarta+Dr,+Plano,+TX+75025/@33.0800508,-96.7521946,15z/data=!3m1!4b1!4m5!3m4!1s0x864c17f92fb3bbb5:0xc89b59efd5c0baf8!8m2!3d33.0800511!4d-96.7434613"
+    }, {
+        "Name": "Bowman Middle School",
+        "Room": "Cafeteria Foyer in Corridor H",
+        "Street Address": "2501 Jupiter Road",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75074",
+        "Latitude": "33.03236",
+        "Longitude": "-96.68307",
+        "MapsLink": "https://www.google.com/maps/place/2501+Jupiter+Rd,+Plano,+TX+75074/@33.031929,-96.691592,15z/data=!3m1!4b1!4m5!3m4!1s0x864c1974fcdcc753:0x4d576b88fb242a1d!8m2!3d33.0319293!4d-96.6828587"
+    }, {
+        "Name": "Carpenter Middle School",
+        "Room": "Small Gym",
+        "Street Address": "3905 Rainier Road",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75023",
+        "Latitude": "33.05100",
+        "Longitude": "-96.72251",
+        "MapsLink": "https://www.google.com/maps/place/3905+Rainier+Rd,+Plano,+TX+75023/@33.0504259,-96.731242,15z/data=!3m1!4b1!4m5!3m4!1s0x864c18414b2b5277:0xb079605dcb61483e!8m2!3d33.0504262!4d-96.7225087"
+    }, {
         "Name": "Celina ISD Administration Building",
         "Room": "Gym",
         "Street Address": "205 S Colorado Street",
@@ -36,8 +100,66 @@
         "Longitude": "-96.78852",
         "MapsLink": "https://www.google.com/maps/place/205+S+Colorado+St,+Celina,+TX+75009/@33.3227598,-96.7879198,3a,75y,101.61h,90t/data=!3m7!1e1!3m5!1sSuJCBr_A6lBfC2AxI_srxQ!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DSuJCBr_A6lBfC2AxI_srxQ%26output%3Dthumbnail%26cb_client%3Dsearch.gws-prod.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D101.61207%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x864c419f1eae233d:0xeae268e5ce91d1de!8m2!3d33.3228011!4d-96.7885113"
     }, {
-        "ID": 4,
-        "Type": "Both",
+        "Name": "Cockrill Middle School",
+        "Room": "Library (A210)",
+        "Street Address": "1351 N. Hardin Boulevard",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.21216",
+        "Longitude": "-96.66656",
+        "MapsLink": "https://www.google.com/maps/place/Cockrill+Middle+School/@33.2115851,-96.6749458,15z/data=!3m2!4b1!5s0x864c147edf5ddc4d:0x61b79c50556fa803!4m5!3m4!1s0x864c147ee8ac8b3b:0x8b2ec01fe31a26d7!8m2!3d33.2115854!4d-96.6662125"
+    },  {
+        "Name": "Collin College Frisco Campus",
+        "Room": "Building J Room 113",
+        "Street Address": "9700 Wade Boulevard",
+        "City": "Frisco",
+        "State": "TX",
+        "Zip": "75035",
+        "Latitude": "33.13138",
+        "Longitude": "-96.79355",
+        "MapsLink": "https://www.google.com/maps/place/9700+Wade+Blvd,+Frisco,+TX+75035/@33.1306223,-96.8024983,15z/data=!3m1!4b1!4m5!3m4!1s0x864c3c4d50a84ccf:0x31e61987f48ea588!8m2!3d33.1306226!4d-96.793765"
+    },  {
+        "Name": "Collin College Higher Education Center",
+        "Room": "Atrium",
+        "Street Address": "3452 Spur 399",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75069",
+        "Latitude": "33.16305",
+        "Longitude": "-96.63851",
+        "MapsLink": "https://www.google.com/maps/place/3452+Spur+399,+McKinney,+TX+75069/@33.1624416,-96.6472908,15z/data=!3m1!4b1!4m5!3m4!1s0x864c1166422fc6fb:0x62b7d54b3a035446!8m2!3d33.1624419!4d-96.6385575"
+    }, {
+        "Name": "Collin College McKinney Campus",
+        "Room": "C Hallway Atrium 3",
+        "Street Address": "2200 W. University Drive",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.21937",
+        "Longitude": "-96.64193",
+        "MapsLink": "https://www.google.com/maps/place/Collin+College+-+Central+Park+Campus+-+Main+Building,+2200+W+University+Dr,+McKinney,+TX+75071/@33.2184409,-96.6505818,15z/data=!4m13!1m7!3m6!1s0x864c130adab96175:0x65f4df80d7db4064!2sCollin+College+-+Central+Park+Campus+-+Main+Building,+2200+W+University+Dr,+McKinney,+TX+75071!3b1!8m2!3d33.2184412!4d-96.6418485!3m4!1s0x864c130adab96175:0x65f4df80d7db4064!8m2!3d33.2184412!4d-96.6418485"
+    }, {
+        "Name": "Collin College PLano Campus",
+        "Room": "D Square",
+        "Street Address": "2800 E. Spring Creek Parkway",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75074",
+        "Latitude": "33.05118",
+        "Longitude": "-96.67679",
+        "MapsLink": "https://www.google.com/maps/place/Collin+College+-+Spring+Creek+Campus/@33.0505358,-96.6857361,15z/data=!3m1!4b1!4m5!3m4!1s0x864c1991a2b47533:0x2fd48a795ca475b4!8m2!3d33.0505361!4d-96.6770028"
+    }, {
+        "Name": "Collin College Wylie Campus",
+        "Room": "WSC Atrium 1",
+        "Street Address": "391 Country Club Road",
+        "City": "Wylie",
+        "State": "TX",
+        "Zip": "75098",
+        "Latitude": "33.01813",
+        "Longitude": "-96.57236",
+        "MapsLink": "https://www.google.com/maps/place/391+Country+Club+Rd,+Wylie,+TX+75098/@33.0176335,-96.5769666,15.9z/data=!4m9!1m2!2m1!1s391+Country+Club+Road!3m5!1s0x864c05d62ed4f7a5:0xb89e78d183bfa4cf!8m2!3d33.017808!4d-96.5722727!15sChUzOTEgQ291bnRyeSBDbHViIFJvYWSSARBnZW9jb2RlZF9hZGRyZXNz"
+    }, {
         "Name": "Collin County Elections Office",
         "Room": "Voting Room",
         "Street Address": "2010 Redbud Boulevard, Suite 102",
@@ -48,8 +170,46 @@
         "Longitude": "-96.62817",
         "MapsLink": "https://www.google.com/maps/place/2010+Redbud+Blvd+Suite+102,+McKinney,+TX+75069/@33.2198637,-96.6293986,18z/data=!4m5!3m4!1s0x864c13071c3fffff:0x6d751c9053bd878b!8m2!3d33.2196956!4d-96.6281564"
     }, {
-        "ID": 5,
-        "Type": "Both",
+        "Name": "Dallas Fire Station #10",
+        "Room": "Apparatus Bay",
+        "Street Address": "4451 Frankford Road",
+        "City": "Dallas",
+        "State": "TX",
+        "Zip": "75287",
+        "Latitude": "33.99848",
+        "Longitude": "-96.83243",
+        "MapsLink": "https://www.google.com/maps/place/4451+Frankford+Rd,+Dallas,+TX+75287/@32.9985182,-96.8349195,15.98z/data=!4m5!3m4!1s0x864c23f689955555:0x3352d794535f93af!8m2!3d32.9980053!4d-96.8323363"
+    }, {
+        "Name": "Dowell Middle School",
+        "Room": "Library (D100)",
+        "Street Address": "301 S. Ridge Road",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.19668",
+        "Longitude": "-96.69577",
+        "MapsLink": "https://www.google.com/maps/place/301+Ridge+Rd,+McKinney,+TX+75070/@33.19672,-96.698235,17z/data=!4m5!3m4!1s0x864c1448aa8e0443:0xeed4817b6eb3238a!8m2!3d33.1964956!4d-96.6958103"
+    }, {
+        "Name": "Evans Middle School",
+        "Room": "Library (A114)",
+        "Street Address": "6998 W. Eldorado Parkway",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.17557",
+        "Longitude": "-96.70777",
+        "MapsLink": "https://www.google.com/maps/place/Evans+Middle+School/@33.1753084,-96.7077616,17z/data=!3m1!4b1!4m5!3m4!1s0x864c15d3342c8e07:0xe45066108c126e45!8m2!3d33.1753084!4d-96.7077616"
+    }, {
+        "Name": "Fairview Town Hall",
+        "Room": "Council Chambers",
+        "Street Address": "372 Town Place",
+        "City": "Fairview",
+        "State": "TX",
+        "Zip": "75069",
+        "Latitude": "33.13219",
+        "Longitude": "-96.64632",
+        "MapsLink": "https://www.google.com/maps/place/372+Town+Pl,+Fairview,+TX+75069/@33.1322421,-96.647912,17z/data=!4m5!3m4!1s0x864c1121607b187b:0xdcd3fa32b071ad72!8m2!3d33.1321163!4d-96.6463992"
+    }, {
         "Name": "Farmersville City Hall",
         "Room": "Council Chambers",
         "Street Address": "205 S Main Street",
@@ -60,32 +220,6 @@
         "Longitude": "-96.35975",
         "MapsLink": "https://www.google.com/maps/place/Farmersville+City+Hall/@33.161077,-96.3620083,17z/data=!3m1!4b1!4m5!3m4!1s0x864bf6f38077042b:0x34f86fe7c651ab13!8m2!3d33.161077!4d-96.359825"
     }, {
-        "ID": 6,
-        "Type": "Both",
-        "Name": "First Melissa",
-        "Room": "Building B Foyer",
-        "Street Address": "2101 E Melissa Road",
-        "City": "Melissa",
-        "State": "TX",
-        "Zip": "75454",
-        "Latitude": "33.28182",
-        "Longitude": "-96.5667",
-        "MapsLink": "https://www.google.com/maps/place/First+Melissa/@33.2820014,-96.5686887,17z/data=!3m1!4b1!4m5!3m4!1s0x864c72a30b59e83b:0x5b576f9736864025!8m2!3d33.2820014!4d-96.5665054"
-    }, {
-        "ID": 7,
-        "Type": "Both",
-        "Name": "Josephine City Hall",
-        "Room": "Council Chambers",
-        "Street Address": "201 Main Street",
-        "City": "Josephine",
-        "State": "TX",
-        "Zip": "75164",
-        "Latitude": "33.06636",
-        "Longitude": "-96.43309",
-        "MapsLink": "https://www.google.com/maps/place/Josephine+City+Hall/@33.0620708,-96.3120151,17z/data=!3m1!4b1!4m5!3m4!1s0x864bfa31a68bff09:0x12452808733cbf34!8m2!3d33.0620708!4d-96.3098318"
-    }, {
-        "ID": 8,
-        "Type": "Both",
         "Name": "Lavon City Hall",
         "Room": "Gym",
         "Street Address": "120 School Road",
@@ -96,8 +230,16 @@
         "Longitude": "-96.56556",
         "MapsLink": "https://www.google.com/maps/place/Lavon+City+Hall/@33.0262206,-96.4353025,17z/data=!3m1!4b1!4m5!3m4!1s0x864c0730f3305765:0x6c7246cb75fe89c2!8m2!3d33.0262206!4d-96.4331138"
     }, {
-        "ID": 9,
-        "Type": "Both",
+        "Name": "McKinney Boyd High School",
+        "Room": "Library (A100)",
+        "Street Address": "600 Lake Forest Drive",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.20316",
+        "Longitude": "-96.67877",
+        "MapsLink": "https://www.google.com/maps/place/McKinney+Boyd+High+School/@33.2029438,-96.6799908,17z/data=!3m1!5s0x864c146f6338fa05:0xae2a124ed65feafc!4m5!3m4!1s0x864c1466a9922ae3:0xb9c0296ce8c19345!8m2!3d33.2029079!4d-96.6786712"
+    }, {
         "Name": "New Hope Town Hall",
         "Room": "Council Chambers",
         "Street Address": "121 Rockcrest Road",
@@ -108,20 +250,6 @@
         "Longitude": "-96.56556",
         "MapsLink": "https://www.google.com/maps/place/New+Hope/@33.2108856,-96.5830662,14z/data=!4m8!1m2!2m1!1snew+hope+town+hall!3m4!1s0x864c0d9af2595555:0x7d8945ed2061b964!8m2!3d33.2108856!4d-96.5655567"
     }, {
-        "ID": 10,
-        "Type": "Both",
-        "Name": "Princeton Public Works Department",
-        "Room": "Conference Room",
-        "Street Address": "255 Monte Carlo Boulevard",
-        "City": "Princeton",
-        "State": "TX",
-        "Zip": "75047",
-        "Latitude": "33.18083",
-        "Longitude": "-96.49537",
-        "MapsLink": "https://www.google.com/maps/place/City+of+Princeton+Public+Works/@33.1901803,-96.5006727,17z/data=!3m1!4b1!4m5!3m4!1s0x864c0d3ee903db75:0xd0a8660027355c4f!8m2!3d33.1901803!4d-96.5006727"
-    }, {
-        "ID": 11,
-        "Type": "Both",
         "Name": "Prosper Town Hall",
         "Room": "Community Room",
         "Street Address": "250 W First Street",
@@ -131,29 +259,5 @@
         "Latitude": "33.23468",
         "Longitude": "-96.8039",
         "MapsLink": "https://www.google.com/maps/place/Prosper+Town+Hall/@33.2344718,-96.8038436,17z/data=!3m1!4b1!4m5!3m4!1s0x864c3f6dec637023:0xa07ee4716367d967!8m2!3d33.2344718!4d-96.8038436"
-    }, {
-        "ID": 12,
-        "Type": "Election Day",
-        "Name": "Weston Community Center",
-        "Room": "Main Hall",
-        "Street Address": "117 Main Street",
-        "City": "Weston",
-        "State": "TX",
-        "Zip": "75097",
-        "Latitude": "33.34722",
-        "Longitude": "-96.66892",
-        "MapsLink": "https://www.google.com/maps/place/Weston+Community+Center/@33.3470018,-96.6689258,17z/data=!3m1!4b1!4m5!3m4!1s0x864c6bfe79ce1409:0x1720939b6c4431a!8m2!3d33.3470018!4d-96.6689258"
-    }, {
-        "ID": 13,
-        "Type": "Both",
-        "Name": "Wylie Senior Recreation Center",
-        "Room": "Dining Room",
-        "Street Address": "800 Thomas Street",
-        "City": "Wylie",
-        "State": "TX",
-        "Zip": "75098",
-        "Latitude": "33.0038",
-        "Longitude": "-96.53215",
-        "MapsLink": "https://www.google.com/maps/place/Wylie+Senior+Recreation+Center/@33.0035465,-96.5321584,17z/data=!3m1!4b1!4m5!3m4!1s0x864c047e9c8ba3f3:0x2fe02ef9d17f3116!8m2!3d33.0035465!4d-96.5321584"
     }
 ]
