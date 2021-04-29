@@ -3,7 +3,7 @@
 </script>
 <main>
     <Nav/>
-
+    <div class="pt-10 text-xl">Unfortunately, registration ended April 1st.</div>
     <div class="page-wrapper px-5 pt-10 flex-col justify-center">
         <h1 class="text-center">Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
         <b class="text-center" >Are you eligible to vote?</b>
@@ -15,7 +15,7 @@
             <li>You are not a convicted felon (you may be eligible to vote if you have completed your sentence, probation, and parole); and</li>
             <li>You have not been declared by a court exercising probate jurisdiction to be either totally mentally incapacitated or partially mentally incapacitated without the right to vote</li>
         </ul>
-        <small>Information obtained and verified via <a href="https://www.votetexas.gov/register/index.html" class = "underline">https://www.votetexas.gov/register/index.html</a>
+        <small class="text-center">Information obtained and verified via <a href="https://www.votetexas.gov/register/index.html" class = "underline">https://www.votetexas.gov/register/index.html</a>
     </div>
 </main>
 
