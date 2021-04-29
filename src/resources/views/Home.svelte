@@ -54,7 +54,8 @@
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
     for(let i = 0; i < locations.length; ++i) {
-        let distance = getDistanceInMiles(locations[i])
+        let distance = geolib.getDistance(currentPosition,
+		{latitude: locations[i].Latitude, longitude: locations[i].Longitude})
         if(distance < shortestDistance) {
             shortestDistance = distance
             closestLocation = locations[i]
