@@ -1,15 +1,5 @@
 [
-    {
-        "Name": "Your location is turned off",
-        "Room": "try using quicksearch below",
-        "Street Address": "720 Pleasant Valley Lane",
-        "City": "Richardson",
-        "State": "TX",
-        "Zip": "75080",
-        "Latitude": "0.0000",
-        "Longitude": "0.0000",
-        "MapsLink": "/"
-    }, {
+ {
         "Name": "Aldridge Elementary School",
         "Room": "Gym",
         "Street Address": "720 Pleasant Valley Lane",
