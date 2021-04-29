@@ -289,11 +289,12 @@
 						<p> </p>
 					{/if}
 				</div-->
+				{closestLocation = getClosestLocation()}
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
 							<h1 class = "text-xl"><b>Your Nearest Location: 
-							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
+							</b><a href = {closestLocation.MapsLink} class="underline text-purple-800">{closestLocation.Name}, {closestLocation.Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none md:shadow" bind:value={ZIP}>
@@ -396,10 +397,9 @@
 						<span class="block leading-tight mx-3">
 							Thomas Meredith is a small business owner and active citizen & participant in local politics. 
 							He and his wife have owned and managed The Pantry restaurant in downtown McKinney for the past 
-							20 years, which was recognized for Outstanding Small Business twice. 
+							20 years. 
 							Tom has worked with fellow McKinney business owners to propose such-minded policies to 
-							the McKinney municipal government, including implementing 3 hour parking downtown and adding 
-							lights in the parking as well. 
+							the McKinney municipal government, such as implementing 3 hour parking downtown. 
 							Tom has been involved in local elections for many years, has been on the City of McKinney bond &
 							McKinney Census Community in 2010, and was Vice President & Treasurer of the Property Owners 
 							organization from 2003–2009. Tom is a father and is married to Cleo Meredith. 
@@ -474,13 +474,15 @@
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
-							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
+							<a href="https://www.pennformckinney.org" target="_blank" class="underline text-purple-800">
 								Stanley Penn
 							</a>
 						</div>
-						Some placeholder content...
+						Stan Penn is the current owner of The Celt Irish Pub in downtown McKinney, and former banker. 
+						Stan has served as Chamber board member and Finance Committee chairman, and has participated in many community organizations... 
 						<span class="more m-0" hidden="hidden">
-							Some hidden placeholder content
+							, such as board member of Chestnut Square. Penn looks to grow the commercial tax base in order to compensate for the city's population growth.
+							He also wishes to preserve greenery/open land while continuing to fund parks, and maintain proportional funding for public services, including police, EMS, & the Fire department.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
