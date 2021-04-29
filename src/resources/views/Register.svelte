@@ -3,7 +3,7 @@
 </script>
 <main>
     <Nav/>
-    <div class="pt-10 text-xl">Unfortunately, registration ended April 1st.</div>
+    <div class="pt-10 underline text-center text-red-300 text-xl">Unfortunately, registration ended April 1st.</div>
     <div class="page-wrapper px-5 pt-10 flex-col justify-center">
         <h1 class="text-center">Click <u><a href="https://www.votetexas.gov/register/index.html" target="_blank">here</a></u> to begin your registration process</h1>
         <b class="text-center" >Are you eligible to vote?</b>
