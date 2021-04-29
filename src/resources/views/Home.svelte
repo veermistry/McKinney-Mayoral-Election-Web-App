@@ -49,22 +49,10 @@
     console.warn("Position could not be determined -- will use McKinney center coordinates instead");
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
+
   function getClosestLocation() {
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
-    for(let i = 0; i < locations.length; ++i) {
-        let distance = getDistanceInMiles(locations[i])
-        if(distance < shortestDistance) {
-            shortestDistance = distance
-            closestLocation = locations[i]
-        }
-    }
-    return closestLocation
-  }
-
-  /*function getClosestLocation() {
-    let closestLocation = locations[0]
-    let shortestDistance = 100000000000000
 	console.log({currentPosition})
     for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(currentPosition,
@@ -75,7 +63,8 @@
         }
     }
     return closestLocation
-  }*/
+  }
+  
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
