@@ -479,9 +479,9 @@
 							</a>
 						</div>
 						Stan Penn is the current owner of The Celt Irish Pub in downtown McKinney, and former banker. 
-						Stan has served as Chamber board member and Finance Committee chairman, and has participated in many community organizations... 
+						Stan has served as Chamber board member and Finance Committee chairman... 
 						<span class="more m-0" hidden="hidden">
-							, such as board member of Chestnut Square. Penn looks to grow the commercial tax base in order to compensate for the city's population growth.
+							, and has participated in many community organizations, such as board member of Chestnut Square. Penn looks to grow the commercial tax base in order to compensate for the city's population growth.
 							He also wishes to preserve greenery/open land while continuing to fund parks, and maintain proportional funding for public services, including police, EMS, & the Fire department.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
@@ -492,25 +492,34 @@
 				<div class="w-full flex flex-wrap flex-row p-2">
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
-							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
+							<a href="https://www.feltus4mckinney.com/" target="_blank" class="underline text-purple-800">
 								Gere' Feltus
 							</a>
 						</div>
-						Some placeholder content...
+						Dr. Geré Feltus is a certified family physician, native to North Texas, and active citizen.
+						Dr. Feltus developed a focus in her practice on the promotion of healthy lifestyles through faith-based settings
+						, partnering with local churches to target cardiovascular disease...
 						<span class="more m-0" hidden="hidden">
-							Some hidden placeholder content
+							, partnering with local churches to target cardiovascular disease, diabetes, & mental health disorders. 
+							She has also served as a board member of the American Heart Association. 
+							Dr. Feltus prioritizes increasing employment by bringing in forward-thinking businesses, along with investment in education.
+							Feltus looks to diversity housing to accomodate for the various demographics entering the city, and looks to expand local programs that support small businesses.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
-							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
+							<a href="https://www.torresformckinney.com/" target="_blank" class="underline text-purple-800">
 								Vicente Torres
 							</a>
 						</div>
-						Some placeholder content...
+						Vicente Torres is an active citizen and long-time resident in North Texas.
+						Vicente has a degree in Public Affairs from the University of Texas at Dallas and is involved in his community in various aspects.
+						He believes in creating a business-friendly environment in McKinney, in order to bring in various types of commerce to the city...
 						<span class="more m-0" hidden="hidden">
-							some hidden placeholder content
+							, from small businesses to larger companies, in order to generate higher tax revenue. 
+							Vicente also wishes to conduct city planning by maintaining McKinney's "unique by nature" motto while expanding to accomodate for the influx in population.
+							Transparency is an important quality to Vicente, as he looks to adhere to the Texas government code of open meetings.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
@@ -520,13 +529,15 @@
 				<div class="w-full flex flex-wrap flex-row p-2">
 					<div class="w-full md:w-1/2 lg:w-1/5 p-2">
 						<div class="font-bold text-left">
-							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
+							<a href="https://www.facebook.com/BrianjmagnusonMckinneyAtLarge1/?ref=page_internal" target="_blank" class="underline text-purple-800">
 								Brian J. Magnuson
 							</a>
 						</div>
-						Some placeholder content...
+						Brian Magnuson is a disabled veteran, artist, & art teacher, as well as an active member of the community.
+						Brian looks to create an environment that caters to businesses in McKinney while maintaining nature in the city.
+						He is an advocate for...
 						<span class="more m-0" hidden="hidden">
-							Some hidden placeholder content
+							small governance, where the government is more focused on holistic improvement rather than growth, while preserving his essentials of government, which include teachers, police, & fire department.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
@@ -536,9 +547,13 @@
 								Charlie Philips
 							</a>
 						</div>
-						Some placeholder content...
+						Charlie Philips is the incumbent officeholder of the At Large 1 position, and is a Senior Partner of Philips & Epperson Attorneys L.P. 
+						Charlie has been active in the community in many different ways over the years, ranging from being the Founder of the Collin County Teen Court Scholarship Fund to participating...
 						<span class="more m-0" hidden="hidden">
-							some hidden placeholder content
+							in the McKinney ISD Special Olympics. 
+							In his past term, Philips has worked to reduce property tax rate every year in office, increase commercial growth by 70%, increase profitability of McKinney National Airport, increase corporate growth, and various other
+							achievements. Philips prioritizes reducing costs of housing in order to sustain the influx in population, as well as bringing in more employers for the incoming population.
+							Charlie looks to continue the no new revenue budget as it was last year, and looks to decrease residential taxes as commercial growth continues.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
