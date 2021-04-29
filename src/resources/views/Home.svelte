@@ -486,18 +486,6 @@
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>
-					<div class="w-full md:w-1/2 lg:w-1/5 p-2 shadow-inner rounded-md">
-						<div class="font-bold text-left">
-							<a href="https://www.facebook.com/Jimmy-Stewart-For-McKinney-Mayor-353532622386631" target="_blank" class="underline text-purple-800">
-								Thomas Tolan
-							</a>
-						</div>
-						Some placeholder content...
-						<span class="more m-0" hidden="hidden">
-							some hidden placeholder content
-						</span>
-						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
-					</div>
 				</div>
 
 				<div class="w-full text-2xl my-5 mb-2 px-5">District 3 Candidates<br><small class="text-gray-500">Click on their names to go to their webpages.</small></div>
