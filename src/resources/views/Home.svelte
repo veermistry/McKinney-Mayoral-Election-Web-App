@@ -43,6 +43,7 @@
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
   function getClosestLocation() {
+	  console.log({currentPosition})
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
     for(let i = 0; i < locations.length; ++i) {
