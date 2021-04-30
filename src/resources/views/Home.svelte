@@ -96,7 +96,7 @@
 
     let registerModal;
 
-  onMount(async () => {
+  onMount( () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log("inside mount")
 	console.log(currentPosition)
