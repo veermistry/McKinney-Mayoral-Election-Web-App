@@ -96,8 +96,8 @@
 
     let registerModal;
 
-  onMount( () => {
-    navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+  onMount( async () => {
+    await navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log("inside mount")
 	console.log(currentPosition)
 	closestInfo = getClosestLocation()
