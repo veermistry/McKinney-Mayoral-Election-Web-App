@@ -8,7 +8,8 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 0.000, longitude: 0.000};
+  let currentPosition = getCurrentPosition();
+//let currentPosition = { latitude: 0.000, longitude: 0.000};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
