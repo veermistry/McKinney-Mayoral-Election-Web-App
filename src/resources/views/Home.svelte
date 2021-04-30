@@ -86,6 +86,7 @@
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
   });
 
+  let closestInfo = getClosestLocation();
     /*function initMap(){
 							var options = {
 								zoom:9,
@@ -299,7 +300,7 @@
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
 							<h1 class = "text-xl"><b>Your Nearest Location: 
-							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
+							</b><a href = {closestInfo.MapsLink} class="underline text-purple-800">{closestInfo.Name}, {closestInfo.Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none md:shadow" bind:value={ZIP}>
