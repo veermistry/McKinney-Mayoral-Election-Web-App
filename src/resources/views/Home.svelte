@@ -55,6 +55,8 @@
     }
     return closestLocation
   }
+
+  let closestInfo = getClosestLocation()
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
@@ -264,6 +266,7 @@
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
+							{console.log({closestInfo})}
 							<h1 class = "text-xl"><b>Your Nearest Location: 
 							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
