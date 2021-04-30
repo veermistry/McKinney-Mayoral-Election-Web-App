@@ -64,7 +64,7 @@
     let shortestDistance = 100000000000000000000000
 
 	while (currentPosition == undefined) {
-		navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+		currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	}
 
 	if (currentPosition != undefined){
