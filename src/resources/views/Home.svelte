@@ -349,7 +349,7 @@
 									<li>District 3</li> 
 									<li>At Large 1</li>
 								</ul>
-								<br> As is the case every year, the main issues of the election consist of taxes & city planning, due to the consistent growth in population that McKinney has had.
+								<br> As is the case every year, the main issues of the election consist of taxes & city planning, due to the consistent growth in population that McKinney has had & continues to have.
 								<br>
 								<br> However, the state of Texas itself has experienced quite a unique year, not only due to COVID-19, but also because of the ice storm Texas had faced in February of this year. 
 								Thus, the support of small business will be an elemental issue of this election, as they recover from the pandemic this year as well as expenses from the storm.
@@ -492,7 +492,7 @@
 						<span class="more m-0" hidden="hidden">
 							, and was appointed by the city government to serve on the McKinney Housing Authority Board for 6 years, redeveloping Newsome and Merritt homes.
 							During his membership on the housing board, Justin started a group for young men called McKinney Force, building relationships & community with District 1 residents, with an emphasis on civic duty and empowerment. 
-							Justin has also served on the Chamber of Commerce Board, and was recognized as the leadership alumni of the year. 
+							Justin has also served on the Chamber of Commerce Board, and was recognized as the leadership alumni of the year. Justin recognizes the issues of mobility and infrastructure as a result of population growth, and wishes to preserve historic & Pride communities, while making improvements to transportation, housing, & jobs.
 						</span>
 						<button type="button" class="font-small font-bold w-full mt-2 text-left text-gray-500" on:click="{toggle}">Read More</button>
 					</div>

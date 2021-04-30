@@ -220,6 +220,76 @@
         "Longitude": "-96.35975",
         "MapsLink": "https://www.google.com/maps/place/Farmersville+City+Hall/@33.161077,-96.3620083,17z/data=!3m1!4b1!4m5!3m4!1s0x864bf6f38077042b:0x34f86fe7c651ab13!8m2!3d33.161077!4d-96.359825"
     }, {
+        "Name": "Faubion Middle School",
+        "Room": "Practice Gym (C104)",
+        "Street Address": "2000 Rollins Street",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75069",
+        "Latitude": "33.20558",
+        "Longitude": "-96.63338",
+        "MapsLink": "https://www.google.com/maps/place/Faubion+Middle+School/@33.2053625,-96.6332638,17z/data=!3m1!4b1!4m5!3m4!1s0x864c13baa17ecc67:0xfca3d710e9790fe0!8m2!3d33.2052403!4d-96.6332701"
+    }, {
+        "Name": "Frisco Fire Station #8",
+        "Room": "Training Room",
+        "Street Address": "14700 Rolater Road",
+        "City": "Frisco",
+        "State": "TX",
+        "Zip": "75035",
+        "Latitude": "33.13849",
+        "Longitude": "-96.74910",
+        "MapsLink": "https://www.google.com/maps/place/14700+Rolater+Rd,+Frisco,+TX+75035/@33.138417,-96.750542,17z/data=!4m5!3m4!1s0x864c1620a91d728f:0x823e75e892738bab!8m2!3d33.138399!4d-96.7491902"
+    }, {
+        "Name": "John & Judy Gay Library",
+        "Room": "Meeting Room",
+        "Street Address": "6861 W. Eldorado Parkway",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.17384",
+        "Longitude": "-96.70631",
+        "MapsLink": "https://www.google.com/maps/place/6861+W+Eldorado+Pkwy,+McKinney,+TX+75070/@33.1738764,-96.7077569,17z/data=!4m5!3m4!1s0x864c142b55d19a99:0x23fdef1bfe25e30d!8m2!3d33.1737237!4d-96.7063407"
+    }, {
+        "Name": "Haggard Middle School",
+        "Room": "Main Entry Vestibule",
+        "Street Address": "2832 Parkhaven Drive",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.03336",
+        "Longitude": "-96.74953",
+        "MapsLink": "https://www.google.com/maps/place/2832+Parkhaven+Dr,+Plano,+TX+75075/@33.0330943,-96.7512295,17z/data=!4m5!3m4!1s0x864c228021aadae3:0x9eb1bc3adfbe0c8e!8m2!3d33.0330673!4d-96.7495665"
+    }, {
+        "Name": "Harmony School of Innovation - Dallas",
+        "Room": "Room 1309",
+        "Street Address": "8080 W. President George Bush Turnpike",
+        "City": "Dallas",
+        "State": "TX",
+        "Zip": "75252",
+        "Latitude": "32.99837",
+        "Longitude": "-96.76390",
+        "MapsLink": "https://www.google.com/maps/place/8080+President+George+Bush+Turnpike,+Dallas,+TX+75252/@32.9985559,-96.7651952,17z/data=!4m5!3m4!1s0x864c221095c208dd:0xab41ccd226737c1!8m2!3d32.998187!4d-96.7640365"
+    }, {
+        "Name": "Hendrick Middle School",
+        "Room": "Front Foyer",
+        "Street Address": "7400 Red River Drive",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75025",
+        "Latitude": "33.07731",
+        "Longitude": "-96.72387",
+        "MapsLink": "https://www.google.com/maps/place/7400+Red+River+Dr,+Plano,+TX+75025/@33.0774438,-96.7258178,17z/data=!4m5!3m4!1s0x864c1820a324ec25:0xac605078f6814176!8m2!3d33.0771741!4d-96.7238115"
+    }, {
+        "Name": "Hunt Middle School",
+        "Room": "Auxiliary Gymnasium",
+        "Street Address": "4900 Legendary Drive",
+        "City": "Frisco",
+        "State": "TX",
+        "Zip": "75034",
+        "Latitude": "33.11949",
+        "Longitude": "-96.80800",
+        "MapsLink": "https://www.google.com/maps/place/4900+Legendary+Dr,+Frisco,+TX+75034/@33.1193066,-96.809804,17z/data=!4m5!3m4!1s0x864c3c58ca0a3b19:0x722b4f2b72897966!8m2!3d33.1192347!4d-96.8080552"
+    }, {
         "Name": "Lavon City Hall",
         "Room": "Gym",
         "Street Address": "120 School Road",
@@ -229,6 +299,26 @@
         "Latitude": "33.02636",
         "Longitude": "-96.56556",
         "MapsLink": "https://www.google.com/maps/place/Lavon+City+Hall/@33.0262206,-96.4353025,17z/data=!3m1!4b1!4m5!3m4!1s0x864c0730f3305765:0x6c7246cb75fe89c2!8m2!3d33.0262206!4d-96.4331138"
+    }, {
+        "Name": "Lucas Community Center",
+        "Room": "Main Room",
+        "Street Address": "665 Country Club Road",
+        "City": "Lucas",
+        "State": "TX",
+        "Zip": "75002",
+        "Latitude": "33.09365",
+        "Longitude": "-96.59415",
+        "MapsLink": "https://www.google.com/maps/place/665+Country+Club+Rd,+Lucas,+TX+75002/@33.0935744,-96.5958261,17z/data=!4m5!3m4!1s0x864c107241af3093:0x9e62376278716331!8m2!3d33.0934036!4d-96.5941417"
+    }, {
+        "Name": "Maus Middle School",
+        "Room": "Auxiliary Gymnasium",
+        "Street Address": "12175 Coit Road",
+        "City": "Frisco",
+        "State": "TX",
+        "Zip": "75035",
+        "Latitude": "33.17789",
+        "Longitude": "-96.77013",
+        "MapsLink": "https://www.google.com/maps/place/12175+Coit+Rd,+Frisco,+TX+75035/@33.1777999,-96.7714956,17z/data=!4m5!3m4!1s0x864c3e12c8ce802f:0xbf4217296f062b2!8m2!3d33.1776742!4d-96.7701652"
     }, {
         "Name": "McKinney Boyd High School",
         "Room": "Library (A100)",
@@ -240,6 +330,96 @@
         "Longitude": "-96.67877",
         "MapsLink": "https://www.google.com/maps/place/McKinney+Boyd+High+School/@33.2029438,-96.6799908,17z/data=!3m1!5s0x864c146f6338fa05:0xae2a124ed65feafc!4m5!3m4!1s0x864c1466a9922ae3:0xb9c0296ce8c19345!8m2!3d33.2029079!4d-96.6786712"
     }, {
+        "Name": "McKinney Fire Station #10",
+        "Room": "Community Room",
+        "Street Address": "1150 Olympic Crossing",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.28276",
+        "Longitude": "-96.62278",
+        "MapsLink": "https://www.google.com/maps/place/McKinney+Fire+Station+10/@33.2826564,-96.6244398,17z/data=!4m5!3m4!1s0x864c6d5cd15cccc7:0x777df28dbadb9bf0!8m2!3d33.2825219!4d-96.6228734"
+    }, {
+        "Name": "McKinney Fire Station #5",
+        "Room": "Community Room",
+        "Street Address": "6600 Virginia Parkway",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.20015",
+        "Longitude": "-96.70492",
+        "MapsLink": "https://www.google.com/maps/place/6600+Virginia+Pkwy,+McKinney,+TX+75071/@33.1996371,-96.7071144,16.73z/data=!4m5!3m4!1s0x864c144d10abc361:0xc63dd7198e403065!8m2!3d33.1998468!4d-96.7050034"
+    }, {
+        "Name": "McKinney Fire Station #7",
+        "Room": "Community Room",
+        "Street Address": "861 S. Independence Parkway",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75070",
+        "Latitude": "33.19603",
+        "Longitude": "-96.74975",
+        "MapsLink": "https://www.google.com/maps/place/861+Independence+Pkwy,+McKinney,+TX+75070/@33.1959414,-96.7509654,17z/data=!4m5!3m4!1s0x864c3e27648b21f5:0xf8b05288b1f81f09!8m2!3d33.1958516!4d-96.7498174"
+    }, {
+        "Name": "McKinney High School",
+        "Room": "PAC Lobby",
+        "Street Address": "1400 E. Wilson Creek Parkway",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75069",
+        "Latitude": "33.18774",
+        "Longitude": "-96.63307",
+        "MapsLink": "https://www.google.com/maps/place/1400+Wilson+Creek+Pkwy,+McKinney,+TX+75069/@33.1881421,-96.6345382,17z/data=!4m5!3m4!1s0x864c13c5a56b60e7:0x150a0885be46021e!8m2!3d33.1875272!4d-96.6330819"
+    }, {
+        "Name": "McKinney North High School",
+        "Room": "Auditorium Lobby",
+        "Street Address": "2550 Wilmeth Road",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.23040",
+        "Longitude": "-96.64223",
+        "MapsLink": "https://www.google.com/maps/place/2550+Wilmeth+Rd,+McKinney,+TX+75071/@33.2302837,-96.6438743,17z/data=!4m5!3m4!1s0x864c1312d449d165:0x58e0960dec5816cb!8m2!3d33.230194!4d-96.6421791"
+    }, {
+        "Name": "Melissa City Hall",
+        "Room": "Municipal Court Room",
+        "Street Address": "3411 Barker Avenue",
+        "City": "Melissa",
+        "State": "TX",
+        "Zip": "75454",
+        "Latitude": "33.29356",
+        "Longitude": "-96.57288",
+        "MapsLink": "https://www.google.com/maps/place/3411+Barker+Ave,+Melissa,+TX+75454/@33.2933568,-96.5728222,17z/data=!3m1!4b1!4m5!3m4!1s0x864c729bf9ad816b:0x7c0e93050f1fc7de!8m2!3d33.2933568!4d-96.5728222"
+    }, {
+        "Name": "Michael J. Felix Community Center",
+        "Room": "Room A & B",
+        "Street Address": "3815 E. Sachse Road",
+        "City": "Sachse",
+        "State": "TX",
+        "Zip": "75048",
+        "Latitude": "32.99741",
+        "Longitude": "-96.58492",
+        "MapsLink": "https://www.google.com/maps/place/3815+Sachse+Rd,+Sachse,+TX+75048/@32.9735943,-96.5876039,16.35z/data=!4m5!3m4!1s0x864c1cb616974809:0x3fc4eba32e2ef601!8m2!3d32.9740409!4d-96.5848753"
+    }, {
+        "Name": "Miller Elementary School",
+        "Room": "Gym",
+        "Street Address": "5651 Coventry Drive",
+        "City": "Richardson",
+        "State": "TX",
+        "Zip": "75082",
+        "Latitude": "32.99318",
+        "Longitude": "-96.61647",
+        "MapsLink": "https://www.google.com/maps/place/5651+Coventry+Dr,+Richardson,+TX+75082/@32.9930607,-96.6181656,17z/data=!4m5!3m4!1s0x864c1c81e966583b:0xc223fcaf7ca84dd9!8m2!3d32.9929887!4d-96.6164704"
+    }, {
+        "Name": "Murphy Community Center",
+        "Room": "Homer and Marie Adams Room",
+        "Street Address": "205 North Murphy Road",
+        "City": "Murphy",
+        "State": "TX",
+        "Zip": "75094",
+        "Latitude": "33.01672",
+        "Longitude": "-96.61346",
+        "MapsLink": "https://www.google.com/maps/place/205+N+Murphy+Rd,+Murphy,+TX+75094/@33.0167293,-96.6152885,17z/data=!4m5!3m4!1s0x864c1b0cd3b0efd3:0x126b695718b57291!8m2!3d33.0165764!4d-96.6135075"
+    }, {
         "Name": "New Hope Town Hall",
         "Room": "Council Chambers",
         "Street Address": "121 Rockcrest Road",
@@ -250,6 +430,36 @@
         "Longitude": "-96.56556",
         "MapsLink": "https://www.google.com/maps/place/New+Hope/@33.2108856,-96.5830662,14z/data=!4m8!1m2!2m1!1snew+hope+town+hall!3m4!1s0x864c0d9af2595555:0x7d8945ed2061b964!8m2!3d33.2108856!4d-96.5655567"
     }, {
+        "Name": "Old Edge Middle School",
+        "Room": "Cafeteria",
+        "Street Address": "615 N. FM 1138",
+        "City": "Nevada",
+        "State": "TX",
+        "Zip": "75173",
+        "Latitude": "33.06317",
+        "Longitude": "-96.36680",
+        "MapsLink": "https://www.google.com/maps/place/615+N+Fm+1138,+Nevada,+TX+75173/@33.0630319,-96.3685581,17z/data=!4m5!3m4!1s0x864bf84d6189c4d1:0x71a4f6f9af91ef85!8m2!3d33.06293!4d-96.366817"
+    }, {
+        "Name": "Parker City Hall",
+        "Room": "Council Chambers",
+        "Street Address": "5700 E. Parker Road",
+        "City": "Parker",
+        "State": "TX",
+        "Zip": "75002",
+        "Latitude": "33.05437",
+        "Longitude": "-96.62194",
+        "MapsLink": "https://www.google.com/maps/place/5700+E+Parker+Rd,+Parker,+TX+75002/@33.0545752,-96.6236409,17z/data=!4m5!3m4!1s0x864c1a58b09cff21:0xd8b63ed1e7a56bbb!8m2!3d33.0540819!4d-96.6220627"
+    }, {
+        "Name": "Parr Library",
+        "Room": "Program Room",
+        "Street Address": "6200 Windhaven Parkway",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75093",
+        "Latitude": "33.05596",
+        "Longitude": "-96.83435",
+        "MapsLink": "https://www.google.com/maps/place/6200+Windhaven+Pkwy,+Plano,+TX+75093/@33.0562004,-96.8361858,17z/data=!4m5!3m4!1s0x864c2358a54dd219:0x2c78743d32854a08!8m2!3d33.0556755!4d-96.8343462"
+    }, {
         "Name": "Prosper Town Hall",
         "Room": "Community Room",
         "Street Address": "250 W First Street",
@@ -259,5 +469,106 @@
         "Latitude": "33.23468",
         "Longitude": "-96.8039",
         "MapsLink": "https://www.google.com/maps/place/Prosper+Town+Hall/@33.2344718,-96.8038436,17z/data=!3m1!4b1!4m5!3m4!1s0x864c3f6dec637023:0xa07ee4716367d967!8m2!3d33.2344718!4d-96.8038436"
+    }, {
+        "Name": "Richardson Civic Center/City Hall",
+        "Room": "Parks Room",
+        "Street Address": "411 W. Arapaho Road",
+        "City": "Richardson",
+        "State": "TX",
+        "Zip": "75080",
+        "Latitude": "32.96012",
+        "Longitude": "-96.73171",
+        "MapsLink": "https://www.google.com/maps/place/411+W+Arapaho+Rd,+Richardson,+TX+75080/@32.9596163,-96.731009,17z/data=!3m1!4b1!4m5!3m4!1s0x864c1f6c78aaedb5:0xa063d10b81c025d7!8m2!3d32.9599376!4d-96.7316707"
+    }, {
+        "Name": "Robinson Middle School",
+        "Room": "Gym",
+        "Street Address": "6701 Preston Meadow Drive",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75093",
+        "Latitude": "33.06438",
+        "Longitude": "-96.78013",
+        "MapsLink": "https://www.google.com/maps/place/6701+Preston+Meadow+Dr,+Plano,+TX+75093/@33.064268,-96.7815174,17z/data=!4m5!3m4!1s0x864c22e8ec9aa6e5:0x538a25f7c1f9712d!8m2!3d33.0641691!4d-96.7801227"
+    }
+    , {
+        "Name": "Rose Haggar Elementary School",
+        "Room": "Gym",
+        "Street Address": "17820 Campbell Road",
+        "City": "Dallas",
+        "State": "TX",
+        "Zip": "75252",
+        "Latitude": "32.99542",
+        "Longitude": "-96.80486",
+        "MapsLink": "https://www.google.com/maps/place/Haggar+Elementary+School/@32.9951231,-96.8047194,17z/data=!3m1!4b1!4m5!3m4!1s0x864c23db493fc9d3:0x5e22df1184a69b0e!8m2!3d32.9951703!4d-96.8048553"
+    }, {
+        "Name": "Roy and Helen Hall Memorial Library",
+        "Room": "Dulaney Room",
+        "Street Address": "101 E. Hunt Street",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75069",
+        "Latitude": "33.20007",
+        "Longitude": "-96.61539",
+        "MapsLink": "https://www.google.com/maps/place/Roy+%26+Helen+Hall+Memorial+Library/@33.1999839,-96.617125,17z/data=!4m5!3m4!1s0x864c124bdf1209c1:0x91be91ee999e4b8c!8m2!3d33.199862!4d-96.615387"
+    }, {
+        "Name": "Schimelpfenig Middle School",
+        "Room": "Front Foyer",
+        "Street Address": "2400 Maumelle Drive",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75023",
+        "Latitude": "33.06540",
+        "Longitude": "-96.74494",
+        "MapsLink": "https://www.google.com/maps/place/2400+Maumelle+Dr,+Plano,+TX+75023/@33.065211,-96.7462777,17z/data=!4m5!3m4!1s0x864c18061d65810b:0xc297695660628d3e!8m2!3d33.065184!4d-96.744883"
+    }, {
+        "Name": "Scott Johnson Middle School",
+        "Room": "Library (A112)",
+        "Street Address": "3400 Community Avenue",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.23435",
+        "Longitude": "-96.63807",
+        "MapsLink": "https://www.google.com/maps/place/Scott+Johnson+Middle+School/@33.2345295,-96.6394857,17z/data=!3m1!5s0x864c13140398e617:0x53c096d8ee702e40!4m5!3m4!1s0x864c1312ed0d43c1:0x4854464604a345e1!8m2!3d33.2341526!4d-96.6381339"
+    }, {
+        "Name": "Shepton High School",
+        "Room": "Small Gym",
+        "Street Address": "5505 W Plano Pkwy",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75093",
+        "Latitude": "33.01760",
+        "Longitude": "-96.81147",
+        "MapsLink": "https://www.google.com/maps/place/Shepton+High+School/@33.017767,-96.8131773,17z/data=!4m5!3m4!1s0x864c23a2d76db58b:0x2da35c00878327eb!8m2!3d33.0174072!4d-96.811568"
+    }, {
+        "Name": "Slaughter Elementary School",
+        "Room": "L109",
+        "Street Address": "2706 Wolford Avenue",
+        "City": "McKinney",
+        "State": "TX",
+        "Zip": "75071",
+        "Latitude": "33.20205",
+        "Longitude": "-96.64869",
+        "MapsLink": "https://www.google.com/maps/place/Slaughter+Elementary+School/@33.2018059,-96.6503664,17z/data=!4m5!3m4!1s0x864c1390ce20eb83:0xef68aa8ee0dae4c3!8m2!3d33.2018239!4d-96.6486829"
+    }, {
+        "Name": "Tom Muehlenbeck Recreation Center",
+        "Room": "Meeting Room A",
+        "Street Address": "5801 W. Parker Road",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75093",
+        "Latitude": "33.04706",
+        "Longitude": "-96.82042",
+        "MapsLink": "https://www.google.com/maps/place/Tom+Muehlenbeck+Center/@33.046857,-96.8219847,17z/data=!4m5!3m4!1s0x864c236973e55d29:0x7555c910de257886!8m2!3d33.046857!4d-96.820311"
+    }, {
+        "Name": "Wilson Middle School",
+        "Room": "F113",
+        "Street Address": "1001 Custer Road",
+        "City": "Plano",
+        "State": "TX",
+        "Zip": "75075",
+        "Latitude": "33.01320",
+        "Longitude": "-96.73440",
+        "MapsLink": "https://www.google.com/maps/place/Wilson+Middle+School/@33.012977,-96.7343471,17z/data=!3m1!4b1!4m5!3m4!1s0x864c18968975459b:0xb15fdebdff94bc60!8m2!3d33.012977!4d-96.7343471"
     }
 ]
