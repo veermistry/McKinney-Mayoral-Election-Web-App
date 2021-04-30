@@ -8,7 +8,7 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = getCurrentPosition();
+  let currentPosition = pos.coords;
 //let currentPosition = { latitude: 0.000, longitude: 0.000};
 	let closestDist = 10000000000000000;
 	let showModal = false;
@@ -57,7 +57,8 @@
   }
 
   function getClosestLocation() {
-	  console.log(currentPosition)
+	navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+	console.log(currentPosition)
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
     for(let i = 0; i < locations.length; ++i) {
@@ -88,9 +89,9 @@
 
     let registerModal;
 
-  onMount(async () => {
+  /*onMount(async () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
-  });
+  });*/
 
   let closestInfo = getClosestLocation();
     /*function initMap(){
