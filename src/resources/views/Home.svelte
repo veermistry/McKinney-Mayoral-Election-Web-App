@@ -8,12 +8,13 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 33.203468, longitude: -96.672491};
+  let currentPosition = { latitude: 33.21976, longitude: -96.62817};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
 	let ZIP = "";
 	let Found = false;
+	let closestInfo = locations[0];
 
 	const toggle = async (e) => {
 
@@ -63,6 +64,7 @@
     }
     return closestLocation
   }
+
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
@@ -292,7 +294,7 @@
 				</div-->
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
-                        <div class="w-full">
+                        <div class="w-full text-white">
 							<h1 class = "text-xl"><b>Your Nearest Location: 
 							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
@@ -349,10 +351,12 @@
 								</thead>
 								<tbody>
 									{#each locations as location}
+										{#if location.Latitude > 1}
 										<tr>
 											<td class="p-3 border border-color-gray-500 underline"><a href={location.MapsLink}>{location.Name}</a></td>
 											<td class="p-3 border border-color-gray-500">{location.Room}</td>
 										</tr>
+										{/if}
 									{/each}
 								</tbody>
 							</table>
