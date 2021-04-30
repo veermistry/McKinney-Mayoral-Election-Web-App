@@ -7,7 +7,7 @@
 	import { } from 'node:os';
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 33.203468, longitude: -96.672491};
+  let currentPosition = { latitude: 32.99578, longitude: -96.72991};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
