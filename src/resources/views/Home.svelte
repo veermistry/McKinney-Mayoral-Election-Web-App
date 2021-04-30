@@ -5,19 +5,15 @@
 	import Modal from '../components/modal.svelte';
 	import Nav from '../components/nav.svelte'
 	import { } from 'node:os';
-
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 33.21976, longitude: -96.62817};
+  let currentPosition = { latitude: 33.203468, longitude: -96.672491};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
 	let ZIP = "";
 	let Found = false;
-	let closestInfo = locations[0];
-
 	const toggle = async (e) => {
-
 		let element = e.currentTarget.parentNode.querySelector('.more')
 		
 		if (element.getAttribute('hidden') !== null) {
@@ -28,29 +24,24 @@
 			element.parentNode.querySelector('button').innerHTML = 'Read More'
 		}
 	}
-
 	const setFound = (bool) => {
 		Found = bool
 		return '' // Prevents rendering from the inline call.
 	};
-
   function getDistanceInMiles(targetPosition) {
     // calculate distance and convert to miles
     var distanceInMeters = geolib.getDistance(targetPosition, currentPosition);
     var distanceInMiles = distanceInMeters * 0.000621371192;
     return distanceInMiles.toFixed(1);
   };
-
   function onLoadCurrentPosition(pos) {
     currentPosition = pos.coords;
     closestLocation = getClosestLocation();
   }
-
   function onErrorLoadingCurrentPosition(err) {
     console.warn("Position could not be determined -- will use McKinney center coordinates instead");
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
-
   function getClosestLocation() {
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
@@ -64,78 +55,68 @@
     }
     return closestLocation
   }
-
 	const triggerNearest = () => {
 		showNearest =  !showNearest;
 	}
-
-
-
-
 	const assignVals = (locationx) => {
 		closestLocation = locationx.Name;
 		closestDist = getDistanceInMiles(locationx);
 	}
-
     let registerModal;
-
   onMount(async () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
   });
-
     /*function initMap(){
 							var options = {
 								zoom:9,
 								center:{lat:33.1983,lng:-96.6389}
 							}
 						}
-
 							var map = new 
 							google.maps.Map(document.getElementById('map'), options);
-
 							addMarker({
 								coords:{lat: 33.346207, lng: -96.547211},
 								content: '<small>Anna ISD Administration Building</small>'
 							});
 							addMarker({
 								coords:{lat:33.30546, lng: -96.40425},
-								content: '<small>Blue Ridge ISD Administration</small>'
+								content: '<small>Blue Ridge ISD Administration</small>'
 							});
 							addMarker({
 								coords:{lat:33.32303, lng:-96.78852},
-								content: '<small>Celina ISD Administration Building</small>'
+								content: '<small>Celina ISD Administration Building</small>'
 							});
 							addMarker({
 								coords:{lat:33.21976, lng:-96.62817},
-								content: '<small>Collin County Elections Office</small>'
+								content: '<small>Collin County Elections Office</small>'
 							});
 							addMarker({
 								coords:{lat:33.16128, lng:-96.35975},
-								content: '<small>Farmersville City Hall</small>'
+								content: '<small>Farmersville City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.28182, lng: -96.5667},
-								content: '<small>First Melissa</small>'
+								content: '<small>First Melissa</small>'
 							});
 							addMarker({
 								coords:{lat:33.06636, lng: -96.43309},
-								content: '<small>Josephine City Hall</small>'
+								content: '<small>Josephine City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.02636, lng:-96.56556},
-								content: '<small>Lavon City Hall</small>'
+								content: '<small>Lavon City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.21091, lng:-96.56556},
-								content: '<small>New Hope Town Hall</small>'
+								content: '<small>New Hope Town Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.18083, lng: -96.49537},
-								content: '<small>Princeton Public Works Department</small>'
+								content: '<small>Princeton Public Works Department</small>'
 							});
 							addMarker({
 								coords:{lat:33.23468, lng:-96.8039},
-								content: '<small>Prosper Town Hall</small>'
+								content: '<small>Prosper Town Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.34722, lng:-96.66892},
@@ -143,31 +124,25 @@
 							});
 							addMarker({
 								coords:{lat:33.0038, lng: -96.53215},
-								content: '<small>Wylie Senior Recreation Center</small>'
+								content: '<small>Wylie Senior Recreation Center</small>'
 							});
-
 							function addMarker(props){
 								var marker = new google.maps.Marker({
 								position:props.coords,
 								map:map 
 							});
 							}
-
 							if(props.iconImage){
 								marker.setIcon(props.iconImage);
 							}
-
 							if(props.content){
 								var infoWindow = new google.maps.infoWindow({
 									content:props.content
 								});
-
 								marker.addListener('click', function(){
 									infoWindow.open(map, marker);
 								});
 							}*/
-
-
 </script>
 
 
@@ -189,52 +164,50 @@
 								center:{lat:33.1983,lng:-96.6389}
 								}
 							}
-
 							var map = new google.maps.Map(document.getElementById('map'), options);
-
 							addMarker({
 								coords:{lat: 33.346207, lng: -96.547211},
 								content: '<small>Anna ISD Administration Building</small>'
 							});
 							addMarker({
 								coords:{lat:33.30546, lng: -96.40425},
-								content: '<small>Blue Ridge ISD Administration</small>'
+								content: '<small>Blue Ridge ISD Administration</small>'
 							});
 							addMarker({
 								coords:{lat:33.32303, lng:-96.78852},
-								content: '<small>Celina ISD Administration Building</small>'
+								content: '<small>Celina ISD Administration Building</small>'
 							});
 							addMarker({
 								coords:{lat:33.21976, lng:-96.62817},  
-								content: '<small>Collin County Elections Office</small>'
+								content: '<small>Collin County Elections Office</small>'
 							});
 							addMarker({
 								coords:{lat:33.16128, lng:-96.35975},
-								content: '<small>Farmersville City Hall</small>'
+								content: '<small>Farmersville City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.28182, lng: -96.5667},
-								content: '<small>First Melissa</small>'
+								content: '<small>First Melissa</small>'
 							});
 							addMarker({
 								coords:{lat:33.06636, lng: -96.43309},
-								content: '<small>Josephine City Hall</small>'
+								content: '<small>Josephine City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.02636, lng:-96.56556},
-								content: '<small>Lavon City Hall</small>'
+								content: '<small>Lavon City Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.21091, lng:-96.56556},
-								content: '<small>New Hope Town Hall</small>'
+								content: '<small>New Hope Town Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.18083, lng: -96.49537},
-								content: '<small>Princeton Public Works Department</small>'
+								content: '<small>Princeton Public Works Department</small>'
 							});
 							addMarker({
 								coords:{lat:33.23468, lng:-96.8039},
-								content: '<small>Prosper Town Hall</small>'
+								content: '<small>Prosper Town Hall</small>'
 							});
 							addMarker({
 								coords:{lat:33.34722, lng:-96.66892},
@@ -242,25 +215,21 @@
 							});
 							addMarker({
 								coords:{lat:33.0038, lng: -96.53215},
-								content: '<small>Wylie Senior Recreation Center</small>'
+								content: '<small>Wylie Senior Recreation Center</small>'
 							});
-
 							function addMarker(props){
 								var marker = new google.maps.Marker({
 								position:props.coords,
 								map:map 
 							});
 							}
-
 							if(props.iconImage){
 								marker.setIcon(props.iconImage);
 							}
-
 							if(props.content){
 								var infoWindow = new google.maps.infoWindow({
 									content:props.content
 								});
-
 								marker.addListener('click', function(){
 									infoWindow.open(map, marker);
 								});
@@ -294,7 +263,7 @@
 				</div-->
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
-                        <div class="w-full text-white">
+                        <div class="w-full">
 							<h1 class = "text-xl"><b>Your Nearest Location: 
 							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
@@ -351,12 +320,10 @@
 								</thead>
 								<tbody>
 									{#each locations as location}
-										{#if location.Latitude > 1}
 										<tr>
 											<td class="p-3 border border-color-gray-500 underline"><a href={location.MapsLink}>{location.Name}</a></td>
 											<td class="p-3 border border-color-gray-500">{location.Room}</td>
 										</tr>
-										{/if}
 									{/each}
 								</tbody>
 							</table>
@@ -569,16 +536,13 @@
 </main>
 
 <style global>
-
 	main {
 		max-width: 100vw;
 		overflow-x: hidden;
 	}
-
 	.page-wrapper {
 		max-width: 1920px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 </style>
-
