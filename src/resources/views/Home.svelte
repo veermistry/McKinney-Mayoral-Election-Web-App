@@ -98,8 +98,10 @@
 
   onMount(async () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+	console.log("inside mount")
   });
 
+  navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
   let closestInfo = getClosestLocation();
     /*function initMap(){
 							var options = {
