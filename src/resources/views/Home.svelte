@@ -62,6 +62,11 @@
 	console.log(currentPosition)
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
+
+	while (currentPosition == undefined) {
+		navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+	}
+
 	if (currentPosition != undefined){
 		for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(
@@ -74,8 +79,6 @@
             closestLocation = locations[i]
         }
     	}
-	} else {
-		return getClosestLocation()
 	}
 
 	console.log(closestLocation.Name)
