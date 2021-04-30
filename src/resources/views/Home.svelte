@@ -10,6 +10,7 @@
   $: closestLocation = locations[2];
 //let currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 //let currentPosition = { latitude: 0.000, longitude: 0.000};
+	let currentPosition;
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
@@ -57,7 +58,7 @@
   }
 
   function getClosestLocation() {
-	navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+	currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log(currentPosition)
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
