@@ -7,7 +7,7 @@
 	import { } from 'node:os';
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 32.99578, longitude: -96.72991};
+  let currentPosition = { latitude: 0.0000, longitude: 0.0000};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
@@ -43,7 +43,6 @@
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
   function getClosestLocation() {
-	  console.log({currentPosition})
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
     for(let i = 0; i < locations.length; ++i) {
@@ -144,7 +143,6 @@
 									infoWindow.open(map, marker);
 								});
 							}*/
-	let closestInfo = getClosestLocation()
 </script>
 
 
@@ -267,7 +265,7 @@
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
 							<h1 class = "text-xl"><b>Your Nearest Location: 
-							</b><a href = {closestInfo.MapsLink} class="underline text-purple-800">{closestInfo.Name}, {closestInfo.Room} </a></h1>
+							</b><a href = {getClosestLocation().MapsLink} class="underline text-purple-800">{getClosestLocation().Name}, {getClosestLocation().Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none md:shadow" bind:value={ZIP}>
@@ -322,10 +320,12 @@
 								</thead>
 								<tbody>
 									{#each locations as location}
+										{#if location.Latitude > 1}
 										<tr>
 											<td class="p-3 border border-color-gray-500 underline"><a href={location.MapsLink}>{location.Name}</a></td>
 											<td class="p-3 border border-color-gray-500">{location.Room}</td>
 										</tr>
+										{/if}
 									{/each}
 								</tbody>
 							</table>
