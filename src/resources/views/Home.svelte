@@ -45,7 +45,7 @@
     return distanceInMiles.toFixed(1);
   };*/
 
-  function onLoadCurrentPosition(pos) {
+ /* function onLoadCurrentPosition(pos) {
 	console.log(pos)
     currentPosition = pos.coords;
 	console.log(currentPosition)
@@ -97,7 +97,7 @@
     let registerModal;
 
   onMount( async () => {
-    await navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+    navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log("inside mount")
 	console.log(currentPosition)
 	closestInfo = getClosestLocation()
@@ -105,7 +105,9 @@
 
   //navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
   //console.log(currentPosition);
-  //let closestInfo = getClosestLocation();
+  
+  let closestInfo = getClosestLocation();
+  */
     /*function initMap(){
 							var options = {
 								zoom:9,
@@ -194,7 +196,6 @@
 </script>
 
 
-<Modal bind:this={registerModal}/>
 <main>
 
 	<div>
@@ -318,8 +319,6 @@
                 <div class="flex flex-wrap flex-row p-5">
 					<div class="w-full md:w-2/3 p-5">
                         <div class="w-full">
-							<h1 class = "text-xl"><b>Your Nearest Location: 
-							</b><a href = {closestInfo.MapsLink} class="underline text-purple-800">{closestInfo.Name}, {closestInfo.Room} </a></h1>
 							<div class="w-full text-gray-700 font-main block">Location QuickSearch:</div> 
 							<div class="w-full leading-tight text-gray-500">Enter your zip code to find a location near you.</div> 
 							<input on:keytype={ZIP} type="text" placeholder="Insert ZIP" class="form-input mt-2 w-56 px-3 py-2 rounded border-2 md:border-none md:shadow" bind:value={ZIP}>
