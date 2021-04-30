@@ -48,7 +48,6 @@
 	console.log(pos)
     currentPosition = pos.coords;
 	console.log(currentPosition)
-	return pos.coords
     //closestLocation = getClosestLocation();
   }
 
@@ -59,7 +58,7 @@
   }
 
   function getClosestLocation() {
-	navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+	//navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log(currentPosition)
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
@@ -101,7 +100,7 @@
 	console.log("inside mount")
   });
 
-  navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+  //navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
   console.log(currentPosition);
   let closestInfo = getClosestLocation();
     /*function initMap(){
