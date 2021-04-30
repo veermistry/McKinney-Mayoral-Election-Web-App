@@ -36,17 +36,22 @@
   function getDistanceInMiles(targetPosition) {
     // calculate distance and convert to miles
     var distanceInMeters = geolib.getDistance(targetPosition, currentPosition);
+	console.log(distanceInMeters)
     var distanceInMiles = distanceInMeters * 0.000621371192;
+	console.log(distanceInMiles)
     return distanceInMiles.toFixed(1);
   };
 
   function onLoadCurrentPosition(pos) {
+	console.log(pos)
     currentPosition = pos.coords;
+	console.log(currentPosition)
     closestLocation = getClosestLocation();
   }
 
   function onErrorLoadingCurrentPosition(err) {
     console.warn("Position could not be determined -- will use McKinney center coordinates instead");
+	console.log("not found!!!!!")
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
