@@ -68,6 +68,7 @@
             closestLocation = locations[i]
         }
     }
+	console.log(closestLocation.Name)
     return closestLocation
   }
 	const triggerNearest = () => {
