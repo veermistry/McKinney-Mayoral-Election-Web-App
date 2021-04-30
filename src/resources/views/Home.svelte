@@ -8,7 +8,7 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = { latitude: 33.203546, longitude: -96.672249};
+  let currentPosition = { latitude: 33.21976, longitude: -96.62817};
 	let closestDist = 10000000000000000;
 	let showModal = false;
 	let showNearest = false;
@@ -53,7 +53,6 @@
   function getClosestLocation() {
     let closestLocation = locations[0]
     let shortestDistance = 100000000000000000000000
-	console.log({currentPosition})
     for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(currentPosition,
 		{latitude: locations[i].Latitude, longitude: locations[i].Longitude})
