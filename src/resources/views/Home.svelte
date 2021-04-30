@@ -8,7 +8,7 @@
 
 	let val_tax = 20;
   $: closestLocation = locations[2];
-  let currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+//let currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 //let currentPosition = { latitude: 0.000, longitude: 0.000};
 	let closestDist = 10000000000000000;
 	let showModal = false;
@@ -34,20 +34,20 @@
 		return '' // Prevents rendering from the inline call.
 	};
 
-  function getDistanceInMiles(targetPosition) {
+  /*function getDistanceInMiles(targetPosition) {
     // calculate distance and convert to miles
     var distanceInMeters = geolib.getDistance(targetPosition, currentPosition);
 	console.log(distanceInMeters)
     var distanceInMiles = distanceInMeters * 0.000621371192;
 	console.log(distanceInMiles)
     return distanceInMiles.toFixed(1);
-  };
+  };*/
 
   function onLoadCurrentPosition(pos) {
 	console.log(pos)
     currentPosition = pos.coords;
 	console.log(currentPosition)
-    closestLocation = getClosestLocation();
+    //closestLocation = getClosestLocation();
   }
 
   function onErrorLoadingCurrentPosition(err) {
