@@ -61,6 +61,8 @@
     for(let i = 0; i < locations.length; ++i) {
         let distance = geolib.getDistance(currentPosition,
 		{latitude: locations[i].Latitude, longitude: locations[i].Longitude})
+		console.log(locations[i].Name)
+		console.log(distance)
         if(distance < shortestDistance) {
             shortestDistance = distance
             closestLocation = locations[i]
