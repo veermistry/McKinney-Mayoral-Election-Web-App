@@ -16,6 +16,7 @@
 	let showNearest = false;
 	let ZIP = "";
 	let Found = false;
+	let currentInfo; 
 
 	const toggle = async (e) => {
 
@@ -98,11 +99,13 @@
   onMount(async () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
 	console.log("inside mount")
+	console.log(currentPosition)
+	currentInfo = getClosestLocation()
   });
 
   //navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
-  console.log(currentPosition);
-  let closestInfo = getClosestLocation();
+  //console.log(currentPosition);
+  //let closestInfo = getClosestLocation();
     /*function initMap(){
 							var options = {
 								zoom:9,
