@@ -74,7 +74,10 @@
             closestLocation = locations[i]
         }
     	}
+	} else {
+		return getClosestLocation()
 	}
+
 	console.log(closestLocation.Name)
     return closestLocation
   }
