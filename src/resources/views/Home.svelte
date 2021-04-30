@@ -96,9 +96,9 @@
 
     let registerModal;
 
-  /*onMount(async () => {
+  onMount(async () => {
     navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
-  });*/
+  });
 
   let closestInfo = getClosestLocation();
     /*function initMap(){
