@@ -101,7 +101,8 @@
 	console.log("inside mount")
   });
 
-  navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+  currentPosition = navigator.geolocation.getCurrentPosition(onLoadCurrentPosition, onErrorLoadingCurrentPosition);
+  console.log(currentPosition);
   let closestInfo = getClosestLocation();
     /*function initMap(){
 							var options = {
